@@ -1,0 +1,12 @@
+version: "3.11"
+
+services:
+  app:
+    image: dancheg97.ru/dancheg97/ctlpkg:latest
+    command: run
+    environment:
+      CTLPKG_INIT_PKGS: adw-gtk-theme gnome-browser-connector gnome-shell-extension-dash-to-dock zsh-theme-powerlevel10k-bin-git zsh-autosuggestions zsh-syntax-highlighting easy-zsh-config
+      CTLPKG_LOGS_FORMAT: text
+      CTLPKG_LOGINS: user|password
+    ports:
+      - 8080:8080
