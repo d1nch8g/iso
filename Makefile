@@ -7,8 +7,8 @@ install:
 
 .PHONY: build
 build:
-	sudo rm -r tmp
-	sudo rm -r build
+	sudo rm -rf tmp
+	sudo rm -rf build
 	sudo chmod a+rwx -R .
 	mkdir -p tmp
 	sudo mkarchiso -v -w tmp -o build .
