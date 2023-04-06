@@ -11,3 +11,9 @@
 Arch based ISO image that provides best in class gnome experience with good set
 of user-friendly extensions and base software. All standart software is regularly
 updated from base repos and AUR.
+
+# Development
+
+First, you should clone repo and run `make install` command. That command will
+provide you with all required development tooling, if you have arch based distro.
+This will allow you to build an ISO image by yourself.
