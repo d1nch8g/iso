@@ -33,3 +33,9 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 - Utilities for any small need
 
 ![](examples/utilities.png)
+
+<!--
+zsh-theme-powerlevel10k-bin-git
+zsh-syntax-highlighting
+zsh-autosuggestions
+-->
