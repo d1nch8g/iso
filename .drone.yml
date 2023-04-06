@@ -16,7 +16,7 @@ steps:
     image: appleboy/drone-git-push
     settings:
       branch: main
-      remote: https://dancheg97@github.com/fleu-io/fleu-os
+      remote: git@github.com:fleu-io/fleu-os.git
       force: false
       commit: true
       ssh_key:
