@@ -18,11 +18,11 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 
 ![](examples/editing.png)
 
-- Complete office suite with onlyoffice
+- Complete office suite
 
 ![](examples/office.png)
 
-- Mail and chat communication tools
+- Mail and chat clients
 
 ![](examples/communication.png)
 
@@ -30,7 +30,7 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 
 ![](examples/browsers.png)
 
-- Utilities for any small need
+- Utilities for any needs
 
 ![](examples/utilities.png)
 
