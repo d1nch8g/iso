@@ -5,6 +5,10 @@ install:
 	yay -Sy --noconfirm meson ninja appimagelauncher
 	wget -O balenaEtcher-1.13.1-x64.AppImage https://github.com/balena-io/etcher/releases/download/v1.13.1/balenaEtcher-1.13.1-x64.AppImage
 
+# required if pacman conf is lin
+database:
+	docker compose up
+
 .PHONY: build
 build:
 	sudo rm -rf tmp
