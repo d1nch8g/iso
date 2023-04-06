@@ -8,12 +8,28 @@
 [![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://dancheg97.ru/dancheg97/flue-os)
 [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/flue-io/flue-os)
 
-Arch based ISO image that provides best in class gnome experience with good set
-of user-friendly extensions and base software. All standart software is regularly
-updated from base repos and AUR.
+Arch based linux distro, which goal is to provide the most friendly user experience in first place. This distro goal - is to provide beautiful distribution with all software that regular users need.
 
-# Development
+- Simple and elegant system tooling
 
-First, you should clone repo and run `make install` command. That command will
-provide you with all required development tooling, if you have arch based distro.
-This will allow you to build an ISO image by yourself.
+![](examples/system.png)
+
+- Advanced editing and processing tools
+
+![](examples/editing.png)
+
+- Complete office suite with onlyoffice
+
+![](examples/office.png)
+
+- Mail and chat communication tools
+
+![](examples/communication.png)
+
+- Browsers of choice
+
+![](examples/browsers.png)
+
+- Utilities for any small need
+
+![](examples/utilities.png)
