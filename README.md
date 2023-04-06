@@ -4,39 +4,10 @@
 
 <h2 align="center">Arch based distro providing best gnome experience</h2>
 
-[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](nan)
-[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-white.svg)](nan)
-[![Generic badge](https://img.shields.io/badge/DOCKER-REGISTRY-blue.svg)](nan)
+[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://dancheg97.ru/dancheg97/fleu-os/src/branch/main/LICENSE)
+[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-white.svg)](https://dancheg97.ru/dancheg97/fleu-os)
+[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-black.svg)](https://github.com/flue-io/fleu-os)
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-unknown printer took a galley of type and scrambled it to make a type specimen
-book. It has survived not only five centuries, but also the leap into electronic
-typesetting, remaining essentially unchanged. It was popularised in the 1960s
-with the release of Letraset sheets containing Lorem Ipsum passages, and more
-recently with desktop publishing software like Aldus PageMaker including
-versions of Lorem Ipsum.
-
----
-
-## Installation:
-
-...
-
----
-
-## Examples:
-
-...
-
----
-
-## Troubleshooting:
-
-...
-
----
-
-## Contributing:
-
-...
+Arch based ISO image that provides best in class gnome experience with good set
+of user-friendly extensions and base software. All standart software is regularly
+updated from base repos and AUR.
