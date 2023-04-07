@@ -4,9 +4,9 @@
 
 <h2 align="center">Arch based distro providing best gnome experience</h2>
 
-[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://dancheg97.ru/dancheg97/fleu-os/src/branch/main/LICENSE)
-[![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://dancheg97.ru/dancheg97/fleu-os)
-[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fleu-io/fleu-os)
+[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://dancheg97.ru/dancheg97/fleuos/src/branch/main/LICENSE)
+[![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://dancheg97.ru/dancheg97/fleuos)
+[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fleu-io/fleuos)
 
 Arch based linux distro, which goal is to provide the most friendly user experience in first place. This distro goal - is to provide beautiful distribution with all software that regular users need.
 
