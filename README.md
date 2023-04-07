@@ -33,3 +33,11 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 - Utilities for any needs
 
 ![](examples/utilities.png)
+
+<!--
+add to repo later
+
+deja-dup
+gdu
+
+-->

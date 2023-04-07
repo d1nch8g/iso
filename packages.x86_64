@@ -131,7 +131,6 @@ gnome-logs
 gnome-system-monitor
 gnome-shell-extensions
 gnome-tweaks
-gnome-console
 chromium
 geary
 nautilus
@@ -152,3 +151,5 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k-bin-git
 ttf-meslo-nerd-font-powerlevel10k
+deja-dup
+gdu
