@@ -123,6 +123,7 @@ gnome-terminal
 gnome-control-center
 gnome-settings-daemon
 gnome-calculator
+gnome-calendar
 gnome-disk-utility
 gnome-keyring
 gnome-logs
@@ -131,11 +132,13 @@ gnome-shell-extensions
 gnome-tweaks
 gnome-characters
 gnome-browser-connector
+gnome-weather
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gtile
 dconf-editor
 chromium
 geary
+simple-scan
 nautilus
 xorg-drivers
 networkmanager
@@ -153,3 +156,4 @@ zsh-theme-powerlevel10k-bin-git
 ttf-meslo-nerd-font-powerlevel10k
 deja-dup
 baobab
+drawing
