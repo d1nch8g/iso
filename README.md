@@ -33,13 +33,3 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 - Utilities for any needs
 
 ![](examples/utilities.png)
-
-<!--
-oh-my-zsh-git
-zsh-theme-powerlevel10k-bin-git
-zsh-syntax-highlighting
-zsh-autosuggestions
-ttf-meslo-nerd-font-powerlevel10k
-
-echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
--->

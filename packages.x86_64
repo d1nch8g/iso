@@ -148,3 +148,7 @@ adw-gtk-theme
 gnome-browser-connector
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gtile
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k-bin-git
+ttf-meslo-nerd-font-powerlevel10k
