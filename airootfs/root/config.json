@@ -1,0 +1,31 @@
+{
+  "additional-repositories": ["multilib"],
+  "audio": "pipewire",
+  "config_version": "2.5.5",
+  "debug": false,
+  "desktop-environment": "gnome",
+  "gfx_driver": "All open-source (default)",
+  "harddrives": ["/dev/nvme0n1"],
+  "hostname": "fleuos",
+  "keyboard-layout": "ru",
+  "nic": {
+    "dhcp": true,
+    "dns": null,
+    "gateway": null,
+    "iface": null,
+    "ip": null,
+    "type": "nm"
+  },
+  "no_pkg_lookups": false,
+  "offline": false,
+  "profile": {
+    "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+  },
+  "script": "guided",
+  "silent": false,
+  "swap": false,
+  "sys-encoding": "UTF-8",
+  "sys-language": "en_US",
+  "timezone": "Asia/Novosibirsk",
+  "version": "2.5.5"
+}
