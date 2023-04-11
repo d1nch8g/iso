@@ -1,0 +1,11 @@
+archinstall --silent --disk_layouts disk.json --config config.json --creds creds.json
+
+MNTDIR=/mnt/archinstall
+
+cp /etc/dconf/db/local.d/00-settings $MNTDIR/etc/dconf/db/local.d/00-settings
+cp /etc/dconf/profile/user $MNTDIR/etc/dconf/profile/user
+cp /etc/os-release $MNTDIR/etc/os-release
+cp /etc/pacman.conf $MNTDIR/etc/pacman.conf
+cp /usr/local/share/backgrounds/wallpaper.jpg $MNTDIR/usr/local/share/backgrounds/wallpaper.jpg
+
+arch-chroot $MNTDIR pacman -Sy --noconfirm alsa-utils amd-ucode arch-install-scripts archinstall b43-fwcutter base bind-tools brltty broadcom-wl btrfs-progs clonezilla cloud-init crda cryptsetup darkhttpd ddrescue dhclient dhcpcd diffutils dmraid dnsmasq dosfstools e2fsprogs edk2-shell efibootmgr espeakup ethtool exfatprogs f2fs-tools fatresize fsarchiver gnu-netcat gpart gpm gptfdisk grml-zsh-config grub hdparm intel-ucode irssi iw iwd jfsutils kitty-terminfo less lftp libfido2 libusb-compat linux linux-atm linux-firmware livecd-sounds lsscsi lvm2 lynx man-db man-pages mc mdadm memtest86+ mkinitcpio mkinitcpio-archiso mkinitcpio-nfs-utils modemmanager mtools nano nbd ndisc6 nfs-utils nilfs-utils nmap ntfs-3g nvme-cli openconnect openssh openvpn partclone parted partimage pcsclite ppp pptpclient pv qemu-guest-agent refind reflector reiserfsprogs rp-pppoe rsync rxvt-unicode-terminfo screen sdparm sg3_utils smartmontools sof-firmware squashfs-tools sudo syslinux systemd-resolvconf tcpdump terminus-font testdisk tmux tpm2-tss udftools usb_modeswitch usbmuxd usbutils virtualbox-guest-utils-nox vpnc wireless-regdb wireless_tools wpa_supplicant wvdial xfsprogs xl2tpd zsh gdm mesa gnome-shell gnome-session gnome-terminal gnome-control-center gnome-settings-daemon gnome-calculator gnome-calendar gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-tweaks gnome-characters gnome-browser-connector gnome-weather gnome-shell-extension-dash-to-dock gnome-shell-extension-gtile dconf-editor chromium geary simple-scan nautilus xorg-drivers networkmanager gedit eog nano git xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k-bin-git deja-dup baobab drawing yay
