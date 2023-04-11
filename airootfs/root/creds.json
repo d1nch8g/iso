@@ -1,8 +1,10 @@
 {
-  "!users": [
-    {
-      "sudo": true,
-      "username": "dancheg97"
-    }
-  ]
+	"!root-password": "<ROOT_PASSWORD>",
+	"!users": [
+		{
+			"username": "<USERNAME>",
+			"!password": "<PASSWORD>",
+			"sudo": true
+		}
+	]
 }
