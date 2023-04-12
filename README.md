@@ -1,5 +1,5 @@
 <p align="center">
-<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" width="238px" height="238px" src="./airootfs/usr/local/share/backgrounds/logo.png" />
+<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" width="238px" height="238px" src="./airootfs/usr/local/share/backgrounds/fleu-linux.png" />
 </p>
 
 <h2 align="center">Arch based distro providing best gnome experience</h2>

@@ -35,6 +35,3 @@ alias ls='ls $LS_OPTIONS'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fleu-linux.png
-sed -i 's|/usr/bin/chromium --incognito\n|/usr/bin/chromium --incognito --no-sandbox\n|g' /usr/share/applications/chromium.desktop
