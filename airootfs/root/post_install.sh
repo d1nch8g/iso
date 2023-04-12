@@ -9,9 +9,9 @@ cp -R /root /mnt/archinstall/home/$USERNAME
 
 mkdir -p /mnt/archinstall/usr/local/share/backgrounds
 cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
-cp /usr/local/share/backgrounds/logo.png /mnt/archinstall/usr/local/share/backgrounds/logo.png
+cp /usr/local/share/backgrounds/fleu-linux.png /mnt/archinstall/usr/local/share/backgrounds/fleu-linux.png
 
 chmod a+rwx -R /mnt/archinstall/home/$USERNAME
-arch-chroot -u $USERNAME /mnt/archinstall dconf load / < /mnt/archinstall/etc/dconf.ini
 
+arch-chroot -u $USERNAME /mnt/archinstall dconf load / < /home/$USERNAME/dconf.ini
 arch-chroot /mnt/archinstall pacman -R --noconfirm epiphany gnome-music
