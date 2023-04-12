@@ -1,6 +1,0 @@
-#!/bin/bash
-
-xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fleu-linux.png
-
-# Delete self
-rm "${0}"

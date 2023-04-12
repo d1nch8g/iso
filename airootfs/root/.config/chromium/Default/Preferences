@@ -41,11 +41,21 @@
         "isMostVisited": false,
         "title": "Y-MARKET",
         "url": "https://market.yandex.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "Y-DOSTAVKA",
+        "url": "https://dostavka.yandex.ru/order/express/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "Y-TRAVEL",
+        "url": "https://travel.yandex.ru/"
       }
     ]
   },
   "ntp": {
     "custom_background_local_to_device": true,
-    "num_personal_suggestions": 9
+    "num_personal_suggestions": 10
   }
 }
