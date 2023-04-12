@@ -13,6 +13,7 @@ tap-to-click=true
 
 [org/gnome/desktop/wm/keybindings]
 switch-applications=['']
+switch-input-source=['<Alt>Shift_L']
 switch-to-workspace-down=['']
 switch-to-workspace-left=['']
 switch-to-workspace-right=['']
@@ -21,7 +22,12 @@ switch-windows=['<Super>Tab', '<Alt>Tab']
 
 [org/gnome/shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gTile@vibou']
-favorite-apps=['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'chromium.desktop', 'org.gnome.Geary.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'org.gnome.Terminal.desktop']
+favorite-apps=['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'chromium.desktop', 'org.gnome.Geary.desktop', 'onlyoffice-desktopeditors.desktop', 'org.telegram.desktop.desktop', 'org.gnome.baobab.desktop',  'org.gnome.Terminal.desktop']
+
+[org/gnome/desktop/app-folders/folders/30c1bc5d-b278-46e8-891f-01e60b32f30d]
+apps=['bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bssh.desktop', 'qv4l2.desktop', 'htop.desktop', 'yelp.desktop', 'vim.desktop']
+name='System'
+translate=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 show-trash=false
