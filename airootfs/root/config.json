@@ -8,6 +8,7 @@
   "harddrives": ["/dev/nvme0n1"],
   "hostname": "fleuos",
   "keyboard-layout": "ru",
+  "bootloader": "systemd-bootctl",
   "nic": {
     "dhcp": true,
     "dns": null,
@@ -61,7 +62,10 @@
     "deja-dup",
     "baobab",
     "drawing",
-    "yay"
+    "yay",
+    "onlyoffice-bin",
+    "telegram-desktop",
+    "dconf"
   ],
   "script": "guided",
   "silent": false,
