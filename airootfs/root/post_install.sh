@@ -1,18 +1,17 @@
 echo 'Enter your username:'
 read USERNAME
 
-cp /etc/os-release $MNTDIR/etc/os-release
-cp /etc/pacman.conf $MNTDIR/etc/pacman.conf
-sed -i 's/timeout 3/timeout 0/g' $MNTDIR/boot/loader/loader.conf
+cp /etc/os-release /mnt/archinstall/etc/os-release
+cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
+sed -i 's/timeout 3/timeout 0/g' /mnt/archinstall/boot/loader/loader.conf
 
 cp -R /root /mnt/archinstall/home/$USERNAME
 
-mkdir -p $MNTDIR/usr/local/share/backgrounds
-cp /usr/local/share/backgrounds/wallpaper.jpg $MNTDIR/usr/local/share/backgrounds/wallpaper.jpg
-cp /usr/local/share/backgrounds/logo.png $MNTDIR/usr/local/share/backgrounds/logo.png
+mkdir -p /mnt/archinstall/usr/local/share/backgrounds
+cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
+cp /usr/local/share/backgrounds/logo.png /mnt/archinstall/usr/local/share/backgrounds/logo.png
 
-arch-chroot $MNTDIR xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/logo.png
+chmod a+rwx -R /mnt/archinstall/home/$USERNAME
+arch-chroot -u $USERNAME /mnt/archinstall dconf load / < /mnt/archinstall/etc/dconf.ini
 
-
-arch-chroot -u $USERNAME $MNTDIR dconf load / < $MNTDIR/etc/dconf.ini
-
+arch-chroot /mnt/archinstall pacman -R --noconfirm epiphany gnome-music

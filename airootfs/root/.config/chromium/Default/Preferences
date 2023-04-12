@@ -1,0 +1,51 @@
+{
+  "custom_links": {
+    "initialized": true,
+    "list": [
+      {
+        "isMostVisited": false,
+        "title": "LAMODA",
+        "url": "https://www.lamoda.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "TINKOFF",
+        "url": "https://www.tinkoff.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "SBER",
+        "url": "http://www.sberbank.ru/ru/person"
+      },
+      {
+        "isMostVisited": false,
+        "title": "VK",
+        "url": "https://vk.com/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "Y-MAIL",
+        "url": "https://mail.yandex.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "GOSUSLUGI",
+        "url": "https://www.gosuslugi.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "Y-TRANSLATE",
+        "url": "https://translate.yandex.ru/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "Y-MARKET",
+        "url": "https://market.yandex.ru/"
+      }
+    ]
+  },
+  "ntp": {
+    "custom_background_local_to_device": true,
+    "num_personal_suggestions": 9
+  }
+}
