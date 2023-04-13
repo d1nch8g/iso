@@ -24,10 +24,14 @@ switch-windows=['<Super>Tab', '<Alt>Tab']
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gTile@vibou']
 favorite-apps=['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'chromium.desktop', 'org.gnome.Geary.desktop', 'onlyoffice-desktopeditors.desktop', 'org.telegram.desktop.desktop', 'org.gnome.baobab.desktop',  'org.gnome.Terminal.desktop']
 
-[org/gnome/desktop/app-folders/folders/30c1bc5d-b278-46e8-891f-01e60b32f30d]
-apps=['bvnc.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bssh.desktop', 'qv4l2.desktop', 'htop.desktop', 'yelp.desktop', 'vim.desktop']
-name='System'
-translate=false
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.eog.dekstop', 'org.gnome.seahorse.Application.desktop', 'vinagre.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'qv4l2.desktop', 'lftp.desktop', 'lstopo.desktop', 'bssh.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
 
 [org/gnome/shell/extensions/dash-to-dock]
 show-trash=false

@@ -14,6 +14,6 @@ cp /usr/local/share/backgrounds/fleu-linux.png /mnt/archinstall/usr/local/share/
 
 chmod a+rwx -R /mnt/archinstall/home/$USERNAME
 
-arch-chroot -u $USERNAME /mnt/archinstall dconf load / < /home/$USERNAME/dconf.ini
 arch-chroot /mnt/archinstall pacman -R --noconfirm epiphany gnome-music gnome-console
-arch-chroot /mnt/archinstall zsh 'chsh -s $(which zsh)'
+arch-chroot -u $USERNAME /mnt/archinstall dconf load / < /home/$USER/dconf.ini
+arch-chroot -u $USERNAME /mnt/archinstall chsh -s /usr/bin/zsh $USER

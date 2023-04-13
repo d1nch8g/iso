@@ -132,7 +132,6 @@ gnome-shell-extensions
 gnome-tweaks
 gnome-characters
 gnome-browser-connector
-gnome-weather
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gtile
 dconf-editor
@@ -153,9 +152,4 @@ adw-gtk-theme
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k-bin-git
-deja-dup
-baobab
-drawing
 yay
-onlyoffice-bin
-telegram-desktop
