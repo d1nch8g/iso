@@ -1,3 +1,2 @@
 user-db:user
 system-db:local
-service-db:keyfile/user
