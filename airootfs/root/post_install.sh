@@ -6,6 +6,7 @@ cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
 sed -i 's/timeout 3/timeout 0/g' /mnt/archinstall/boot/loader/loader.conf
 
 cp -R /root/* /mnt/archinstall/home/$USERNAME
+cp -R /root/.[^.]* /mnt/archinstall/home/$USERNAME
 
 mkdir -p /mnt/archinstall/usr/local/share/backgrounds
 cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
