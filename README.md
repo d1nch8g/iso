@@ -38,5 +38,5 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 <!--
 Change some configurations in default archinstall to add and remove some packages properly before installaion
 
-/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py
+/usr/lib/python3.10/site-packages/archinstall/profiles/gnome.py
 -->
