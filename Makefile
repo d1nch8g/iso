@@ -13,11 +13,6 @@ database:
 build:
 	sudo rm -rf tmp
 	sudo rm -rf build
-	sudo rm -rf fmnx-install
-	sudo rm -rf airootfs/usr/bundle
-	git clone https://fmnx.ru/dancheg97/fmnx-install
-	cd fmnx-install && flutter build linux && cd ..
-	mv fmnx-install/build/linux/x64/release/bundle airootfs/usr/bundle 
 	sudo chmod a+rwx -R .
 	mkdir -p tmp
 	sudo mkarchiso -v -w tmp -o build .
