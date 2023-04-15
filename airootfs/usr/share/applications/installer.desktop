@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=FMNX Install
+GenericName=FMNX Install
+Comment=FMNX Install
+Exec=/usr/bundle/installer
+Icon=/usr/bundle/data/flutter_assets/assets/installer.png
+Type=Application

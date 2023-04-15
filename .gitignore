@@ -1,3 +1,4 @@
 **.AppImage
 tmp/**
 build/**
+airootfs/usr/bundle
