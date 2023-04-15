@@ -18,4 +18,4 @@ build:
 	sudo mkarchiso -v -w tmp -o build .
 
 run:
-	run_archiso -i $(pwd)/build/fleuos-$(shell date +"%Y.%m.%d")-x86_64.iso
+	run_archiso -i $(pwd)/build/fmnx-$(shell date +"%Y.%m.%d")-x86_64.iso

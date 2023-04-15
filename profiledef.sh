@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="fleuos"
-iso_label="FLEU_$(date +%Y%m)"
-iso_publisher="FleuOS <https://fleu.io/>"
-iso_application="FleuOS Live/Rescue CD"
+iso_name="fmnx"
+iso_label="FMNX_$(date +%Y%m)"
+iso_publisher="FMNX <https://fmnx.ru/>"
+iso_application="FMNX Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
-install_dir="fleuos"
+install_dir="fmnx"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
