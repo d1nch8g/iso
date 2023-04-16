@@ -1,6 +1,6 @@
 NAME="FMNX"
 PRETTY_NAME="FMNX"
-ID=arch
+ID=fmnx
 BUILD_ID=rolling
 ANSI_COLOR="32;4;23;147;209"
 LOGO=fmnx-linux
