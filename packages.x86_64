@@ -109,6 +109,8 @@ virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
+bluez
+bluez-utils
 wpa_supplicant
 wvdial
 xfsprogs
