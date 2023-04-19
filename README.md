@@ -19,5 +19,5 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 - Utilities for any needs
 
 <p align="center">
-<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="238px" src="./system.gif" />
+<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="460px" src="./system.gif" />
 </p>
