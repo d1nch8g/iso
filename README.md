@@ -12,25 +12,12 @@
 Arch based linux distro, which goal is to provide the most friendly user experience in first place. This distro goal - is to provide beautiful distribution with all software that regular users need.
 
 - Simple and elegant system tooling
-
-![](examples/system.png)
-
 - Advanced editing and processing tools
-
-![](examples/editing.png)
-
 - Complete office suite
-
-![](examples/office.png)
-
 - Mail and chat clients
-
-![](examples/communication.png)
-
 - Browsers of choice
-
-![](examples/browsers.png)
-
 - Utilities for any needs
 
-![](examples/utilities.png)
+<p align="center">
+<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="238px" src="./system.gif" />
+</p>
