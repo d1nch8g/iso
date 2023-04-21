@@ -15,6 +15,10 @@ cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/
 arch-chroot /mnt/archinstall dconf update
 sed -i s|/bin/bash|/usr/bin/zsh|g /mnt/archinstall/etc/passwd
 sed -i s/3/0/g /mnt/archinstall/boot/loader/loader.conf
+mkdir -p /mnt/archinstall/etc/systemd/system/bluetooth.target.wants
+cp /etc/systemd/system/bluetooth.target.wants/bluetooth.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
+mkdir -p /mnt/archinstall/etc/systemd/system/multi-user.target.wants
+cp /mnt/archinstall/usr/docker.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/docker.service
 arch-chroot -u <USER> /mnt/archinstall go install github.com/cweill/gotests/gotests@latest
 arch-chroot -u <USER> /mnt/archinstall go install github.com/fatih/gomodifytags@latest
 arch-chroot -u <USER> /mnt/archinstall go install github.com/josharian/impl@latest
