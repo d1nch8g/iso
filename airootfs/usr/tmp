@@ -1,13 +1,3 @@
-arch-chroot -u <USER> /mnt/archinstall go install github.com/ktr0731/evans@latest
-arch-chroot -u <USER> /mnt/archinstall go install mvdan.cc/gofumpt@latest
-arch-chroot -u <USER> /mnt/archinstall go install github.com/cweill/gotests/gotests@latest
-arch-chroot -u <USER> /mnt/archinstall go install github.com/fatih/gomodifytags@latest
-arch-chroot -u <USER> /mnt/archinstall go install github.com/josharian/impl@latest
-arch-chroot -u <USER> /mnt/archinstall go install github.com/haya14busa/goplay/cmd/goplay@latest
-arch-chroot -u <USER> /mnt/archinstall go install github.com/go-delve/delve/cmd/dlv@latest
-arch-chroot -u <USER> /mnt/archinstall go install honnef.co/go/tools/cmd/staticcheck@latest
-arch-chroot -u <USER> /mnt/archinstall go install golang.org/x/tools/gopls@latest
-arch-chroot -u <USER> /mnt/archinstall go install fmnx.ru/dancheg97/fmnx-gen@latest
 arch-chroot -u <USER> /mnt/archinstall code --install-extension esbenp.prettier-vscode
 arch-chroot -u <USER> /mnt/archinstall code --install-extension ms-azuretools.vscode-docker
 arch-chroot -u <USER> /mnt/archinstall code --install-extension ms-vscode-remote.remote-containers

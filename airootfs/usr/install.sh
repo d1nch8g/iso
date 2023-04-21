@@ -15,3 +15,12 @@ cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/
 arch-chroot /mnt/archinstall dconf update
 sed -i s|/bin/bash|/usr/bin/zsh|g /mnt/archinstall/etc/passwd
 sed -i s/3/0/g /mnt/archinstall/boot/loader/loader.conf
+arch-chroot -u <USER> /mnt/archinstall go install github.com/cweill/gotests/gotests@latest
+arch-chroot -u <USER> /mnt/archinstall go install github.com/fatih/gomodifytags@latest
+arch-chroot -u <USER> /mnt/archinstall go install github.com/josharian/impl@latest
+arch-chroot -u <USER> /mnt/archinstall go install github.com/haya14busa/goplay/cmd/goplay@latest
+arch-chroot -u <USER> /mnt/archinstall go install github.com/go-delve/delve/cmd/dlv@latest
+arch-chroot -u <USER> /mnt/archinstall go install honnef.co/go/tools/cmd/staticcheck@latest
+arch-chroot -u <USER> /mnt/archinstall go install golang.org/x/tools/gopls@latest
+arch-chroot -u <USER> /mnt/archinstall go install mvdan.cc/gofumpt@latest
+arch-chroot -u <USER> /mnt/archinstall go install github.com/ktr0731/evans@latest

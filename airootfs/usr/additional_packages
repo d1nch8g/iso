@@ -30,6 +30,7 @@ golangci-lint-bin
 protoc-gen-go-grpc
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gtile
+go
 npm
 nodejs
 vlang

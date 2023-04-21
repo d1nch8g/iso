@@ -22,13 +22,13 @@ switch-windows=['<Super>Tab', '<Alt>Tab']
 
 [org/gnome/shell]
 enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gTile@vibou']
-favorite-apps=['fmnx-install.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'chromium.desktop', 'org.gnome.baobab.desktop',  'org.gnome.Terminal.desktop']
+favorite-apps=['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Geary.desktop', 'onlyoffice-desktopeditors.desktop', 'chromium.desktop', 'org.gnome.baobab.desktop', 'code.desktop', 'nvim.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.eog.dekstop', 'org.gnome.seahorse.Application.desktop', 'vinagre.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'qv4l2.desktop', 'lftp.desktop', 'lstopo.desktop', 'bssh.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop']
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.eog.dekstop', 'org.gnome.seahorse.Application.desktop', 'vinagre.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'qv4l2.desktop', 'lftp.desktop', 'lstopo.desktop', 'bssh.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop', 'jshell-java-openjdk.desktop', 'jconsole-java-openjdk.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['org.gnome.Characters.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop']
 name='X-GNOME-Utilities.directory'
