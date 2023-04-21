@@ -9,12 +9,12 @@
       },
       {
         "isMostVisited": false,
-        "title": "STACKOVERFLOW",
+        "title": "STOVFLOW",
         "url": "https://stackoverflow.com/"
       },
       {
         "isMostVisited": false,
-        "title": "DOCKERHUB",
+        "title": "DOCKER",
         "url": "https://hub.docker.com/"
       },
       {
@@ -24,7 +24,7 @@
       },
       {
         "isMostVisited": false,
-        "title": "GNOME-EXTENSIONS",
+        "title": "GNOME-EXT",
         "url": "https://extensions.gnome.org/"
       },
       {
@@ -49,8 +49,8 @@
       },
       {
         "isMostVisited": false,
-        "title": "VPM",
-        "url": "https://vpm.vlang.io/"
+        "title": "FMNX",
+        "url": "https://fmnx.ru/"
       }
     ]
   },
