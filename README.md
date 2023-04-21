@@ -31,6 +31,7 @@ Our distro comes with predefined rich set of development tools, allowing it's us
 - Golang, rust, dart, node, v
 - Protoc for gRPC with go and dart generators
 - Flutter with all libraries required for linux and web development
+- VSCode and neovim with small adjustments
 
 ## Desktop environment
 
