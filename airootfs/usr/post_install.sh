@@ -39,3 +39,5 @@ arch-chroot -u $user /mnt/archinstall code --install-extension rangav.vscode-thu
 arch-chroot -u $user /mnt/archinstall code --install-extension zxh404.vscode-proto3
 arch-chroot -u $user /mnt/archinstall code --install-extension Dart-Code.flutter
 arch-chroot -u $user /mnt/archinstall code --install-extension IronGeek.vscode-env
+arch-chroot -u $user /mnt/archinstall code --install-extension vlanguage.vscode-vlang
+arch-chroot -u $user /mnt/archinstall code --install-extension rust-lang.rust-analyzer

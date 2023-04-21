@@ -28,3 +28,9 @@ flutter
 buf-bin
 golangci-lint-bin
 protoc-gen-go-grpc
+gnome-shell-extension-dash-to-dock
+gnome-shell-extension-gtile
+npm
+nodejs
+vlang
+rust
