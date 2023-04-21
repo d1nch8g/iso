@@ -49,5 +49,5 @@ Also distribution provides set of system utilities which might be very userfull 
 - Disks
 - Usage analyser
 - System monitor
-- Fonts
-- Emojis
+- Font exolorer
+- Emoji explorer

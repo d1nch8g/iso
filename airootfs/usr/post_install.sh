@@ -1,4 +1,3 @@
-
 archinstall --silent --disk_layouts /usr/disk.json --config /usr/config.json --creds /usr/creds.json
 cp /etc/os-release /mnt/archinstall/etc/os-release
 cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
