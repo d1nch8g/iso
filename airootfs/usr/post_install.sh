@@ -17,3 +17,25 @@ arch-chroot /mnt/archinstall pacman -R --noconfirm epiphany gnome-music gnome-co
 arch-chroot /mnt/archinstall dconf update
 sed -i s|/bin/bash|/usr/bin/zsh|g /mnt/archinstall/etc/passwd
 sed -i s/3/0/g /mnt/archinstall/boot/loader/loader.conf
+arch-chroot -u $user /mnt/archinstall go install github.com/ktr0731/evans@latest
+arch-chroot -u $user /mnt/archinstall go install mvdan.cc/gofumpt@latest
+arch-chroot -u $user /mnt/archinstall go install github.com/cweill/gotests/gotests@latest
+arch-chroot -u $user /mnt/archinstall go install github.com/fatih/gomodifytags@latest
+arch-chroot -u $user /mnt/archinstall go install github.com/josharian/impl@latest
+arch-chroot -u $user /mnt/archinstall go install github.com/haya14busa/goplay/cmd/goplay@latest
+arch-chroot -u $user /mnt/archinstall go install github.com/go-delve/delve/cmd/dlv@latest
+arch-chroot -u $user /mnt/archinstall go install honnef.co/go/tools/cmd/staticcheck@latest
+arch-chroot -u $user /mnt/archinstall go install golang.org/x/tools/gopls@latest
+arch-chroot -u $user /mnt/archinstall go install fmnx.ru/dancheg97/fmnx-gen@latest
+arch-chroot -u $user /mnt/archinstall code --install-extension esbenp.prettier-vscode
+arch-chroot -u $user /mnt/archinstall code --install-extension ms-azuretools.vscode-docker
+arch-chroot -u $user /mnt/archinstall code --install-extension ms-vscode-remote.remote-containers
+arch-chroot -u $user /mnt/archinstall code --install-extension PKief.material-icon-theme
+arch-chroot -u $user /mnt/archinstall code --install-extension ms-vscode-remote.remote-ssh
+arch-chroot -u $user /mnt/archinstall code --install-extension redhat.vscode-yaml
+arch-chroot -u $user /mnt/archinstall code --install-extension golang.Go
+arch-chroot -u $user /mnt/archinstall code --install-extension mhutchie.git-graph
+arch-chroot -u $user /mnt/archinstall code --install-extension rangav.vscode-thunder-client
+arch-chroot -u $user /mnt/archinstall code --install-extension zxh404.vscode-proto3
+arch-chroot -u $user /mnt/archinstall code --install-extension Dart-Code.flutter
+arch-chroot -u $user /mnt/archinstall code --install-extension IronGeek.vscode-env

@@ -1,0 +1,18 @@
+{
+  "editor.rulers": [80],
+  "workbench.iconTheme": "material-icon-theme",
+  "redhat.telemetry.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnSave": true,
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "workbench.colorTheme": "Default Dark+",
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "window.commandCenter": true,
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "git.suggestSmartCommit": false,
+  "git.useEditorAsCommitInput": false,
+  "git.postCommitCommand": "sync"
+}

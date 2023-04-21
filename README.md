@@ -25,13 +25,5 @@ Arch based linux distro which main goal is to reduce developer headache, by adju
 <!-- 
 TOOD:
 
-git adjustments
-golang adjustments and packages
-vscode adjustments and settings
-docker
-make
-flutter with adjustments
 
-
-
- -->
+-->
