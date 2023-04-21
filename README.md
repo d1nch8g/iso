@@ -21,3 +21,8 @@ Arch based linux distro, which goal is to provide the most friendly user experie
 <p align="center">
 <img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="460px" src="./system.gif" />
 </p>
+
+<!--
+# TODO:
+
+-->

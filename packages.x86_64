@@ -123,8 +123,6 @@ gnome-session
 gnome-terminal
 gnome-control-center
 gnome-settings-daemon
-gnome-calculator
-gnome-calendar
 gnome-disk-utility
 gnome-keyring
 gnome-logs
@@ -132,11 +130,11 @@ gnome-system-monitor
 gnome-shell-extensions
 gnome-tweaks
 gnome-characters
+gnome-font-viewer
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gtile
 dconf-editor
 chromium
-geary
 simple-scan
 nautilus
 xorg-drivers
@@ -154,5 +152,3 @@ zsh-syntax-highlighting
 zsh-theme-powerlevel10k-bin-git
 yay
 fmnx-install
-telegram-desktop
-onlyoffice-bin

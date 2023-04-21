@@ -4,53 +4,53 @@
     "list": [
       {
         "isMostVisited": false,
-        "title": "TINKOFF",
-        "url": "https://www.tinkoff.ru/"
+        "title": "GITHUB",
+        "url": "https://github.com/"
       },
       {
         "isMostVisited": false,
-        "title": "VK",
-        "url": "https://vk.com/"
+        "title": "STACKOVERFLOW",
+        "url": "https://stackoverflow.com/"
       },
       {
         "isMostVisited": false,
-        "title": "LAMODA",
-        "url": "https://www.lamoda.ru/"
+        "title": "DOCKERHUB",
+        "url": "https://hub.docker.com/"
       },
       {
         "isMostVisited": false,
-        "title": "GOSUSLUGI",
-        "url": "https://www.gosuslugi.ru/"
+        "title": "MEDIUM",
+        "url": "https://medium.com/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-DISK",
-        "url": "https://disk.yandex.com/"
+        "title": "GNOME-EXTENSIONS",
+        "url": "https://extensions.gnome.org/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-MAIL",
-        "url": "https://mail.yandex.ru/"
+        "title": "GOPKG",
+        "url": "https://pkg.go.dev/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-TRANSLATE",
-        "url": "https://translate.yandex.ru/"
+        "title": "PUBDEV",
+        "url": "https://pub.dev/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-MARKET",
-        "url": "https://market.yandex.ru/"
+        "title": "NPM",
+        "url": "https://www.npmjs.com/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-DOSTAVKA",
-        "url": "https://dostavka.yandex.ru/order/express/"
+        "title": "CRATES",
+        "url": "https://crates.io/"
       },
       {
         "isMostVisited": false,
-        "title": "Y-TRAVEL",
-        "url": "https://travel.yandex.ru/"
+        "title": "VPM",
+        "url": "https://vpm.vlang.io/"
       }
     ]
   },
