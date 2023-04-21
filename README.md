@@ -20,3 +20,18 @@ Arch based linux distro which main goal is to reduce developer headache, by adju
 <p align="center">
 <img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="460px" src="./system.gif" />
 </p>
+
+
+<!-- 
+TOOD:
+
+git adjustments
+golang adjustments and packages
+vscode adjustments and settings
+docker
+make
+flutter with adjustments
+
+
+
+ -->
