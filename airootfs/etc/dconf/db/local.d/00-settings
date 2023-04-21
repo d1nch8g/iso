@@ -30,6 +30,7 @@ folder-children=['Utilities', 'YaST']
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.eog.dekstop', 'org.gnome.seahorse.Application.desktop', 'vinagre.desktop', 'avahi-discover.desktop', 'qvidcap.desktop', 'bvnc.desktop', 'qv4l2.desktop', 'lftp.desktop', 'lstopo.desktop', 'bssh.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop']
 categories=['X-GNOME-Utilities']
+excluded-apps=['org.gnome.Characters.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
 
