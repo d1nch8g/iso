@@ -19,6 +19,7 @@ mkdir -p /mnt/archinstall/etc/systemd/system/bluetooth.target.wants
 cp /etc/systemd/system/bluetooth.target.wants/bluetooth.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
 mkdir -p /mnt/archinstall/etc/systemd/system/multi-user.target.wants
 cp /mnt/archinstall/usr/docker.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/docker.service
+arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
 arch-chroot -u <USER> /mnt/archinstall go install github.com/cweill/gotests/gotests@latest
 arch-chroot -u <USER> /mnt/archinstall go install github.com/fatih/gomodifytags@latest
 arch-chroot -u <USER> /mnt/archinstall go install github.com/josharian/impl@latest
