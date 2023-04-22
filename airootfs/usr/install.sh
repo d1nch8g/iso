@@ -7,8 +7,6 @@ mkdir -p /mnt/archinstall/etc/dconf/db/local.d
 cp /etc/dconf/db/local.d/00-settings /mnt/archinstall/etc/dconf/db/local.d/00-settings
 mkdir -p /mnt/archinstall/etc/dconf/profile
 cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
-cp -a /root/. /mnt/archinstall/home/<USER>
-chmod a+rwx -R /mnt/archinstall/home/<USER>
 mkdir -p /mnt/archinstall/usr/local/share/backgrounds
 cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
 cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
@@ -44,3 +42,4 @@ arch-chroot /mnt/archinstall code --no-sandbox --user-data-dir ~/.vscode/extensi
 arch-chroot /mnt/archinstall code --no-sandbox --user-data-dir ~/.vscode/extensions --install-extension vlanguage.vscode-vlang
 arch-chroot /mnt/archinstall code --no-sandbox --user-data-dir ~/.vscode/extensions --install-extension rust-lang.rust-analyzer
 cp -a /root/. /mnt/archinstall/home/<USER>
+chmod a+rwx -R /mnt/archinstall/home/<USER>
