@@ -13,12 +13,6 @@ cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/
 arch-chroot /mnt/archinstall dconf update
 sed -i s|/bin/bash|/usr/bin/zsh|g /mnt/archinstall/etc/passwd
 sed -i s/3/0/g /mnt/archinstall/boot/loader/loader.conf
-mkdir -p /mnt/archinstall/etc/systemd/system/bluetooth.target.wants
-cp /etc/systemd/system/bluetooth.target.wants/bluetooth.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
-arch-chroot /mnt/archinstall ln -s /etc/systemd/system/dbus-org.bluez.service /usr/lib/systemd/system/bluetooth.service
-mkdir -p /mnt/archinstall/etc/systemd/system/multi-user.target.wants
-cp /usr/local/docker.service /mnt/archinstall/etc/systemd/system/multi-user.target.wants/docker.service
-arch-chroot /mnt/archinstall ln -s /etc/systemd/system/multi-user.target.wants/docker.service /usr/lib/systemd/system/docker.service
 arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
 cp -a /root/. /mnt/archinstall/home/<USER>
 chmod a+rwx -R /mnt/archinstall/home/<USER>
