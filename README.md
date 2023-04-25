@@ -18,7 +18,7 @@ Arch based linux distro which main goal is to reduce developer headache, by adju
 - Utilities for any needs
 
 <p align="center">
-<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" height="460px" src="./system.gif" />
+<img style="align: center; max-width: 60%" src="./system.gif" />
 </p>
 
 ## Development tools
