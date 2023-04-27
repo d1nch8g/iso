@@ -141,6 +141,8 @@ geary
 deja-dup
 baobab
 dconf-editor
+pipewire
+pipewire-jack
 chromium
 simple-scan
 nautilus
