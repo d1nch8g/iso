@@ -33,6 +33,7 @@ build:
 	sudo rm -rf build
 	sudo chmod a+rwx -R .
 	mkdir -p tmp
+	mkdir -p airootfs/root/go/bin
 	cp ~/go/bin/evans airootfs/root/go/bin
 	cp ~/go/bin/gofumpt airootfs/root/go/bin
 	cp ~/go/bin/gotests airootfs/root/go/bin
@@ -42,6 +43,7 @@ build:
 	cp ~/go/bin/dlv airootfs/root/go/bin
 	cp ~/go/bin/staticcheck airootfs/root/go/bin
 	cp ~/go/bin/gopls airootfs/root/go/bin
+	mkdir -p airootfs/root/.vscode/extensions
 	cp -r ~/.vscode/extensions/esbenp.prettier-vscode-** airootfs/root/.vscode/extensions
 	cp -r ~/.vscode/extensions/ms-azuretools.vscode-docker-** airootfs/root/.vscode/extensions
 	cp -r ~/.vscode/extensions/ms-vscode-remote.remote-containers-** airootfs/root/.vscode/extensions
