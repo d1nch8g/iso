@@ -2,3 +2,5 @@
 tmp/**
 build/**
 airootfs/usr/bundle
+airootfs/root/go/bin/**
+airootfs/root/.vscode/extensions/**
