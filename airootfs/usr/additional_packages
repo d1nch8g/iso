@@ -22,6 +22,7 @@ gnome-calculator
 gnome-calendar
 gnome-clocks
 gnome-music
+pipewire-jack
 totem
 geary
 deja-dup
