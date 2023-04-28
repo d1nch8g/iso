@@ -7,7 +7,7 @@
 [![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://dancheg97.ru/dancheg97/fmnx/src/branch/main/LICENSE)
 [![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://dancheg97.ru/dancheg97/fmnx)
 [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-ru/fmnx)
-[![Build Status](https://ci.fmnx.ru/api/badges/dancheg97/fmnx/status.svg)](https://ci.fmnx.ru/dancheg97/fmnx)
+[![Build Status](https://ci.fmnx.io/api/badges/dev/fmnx/status.svg)](https://ci.fmnx.io/dev/fmnx)
 
 You cannot win the software race in this modern, distributed, open-source world if you are not able to accumulate and integrate existing software into the end system, keeping its cutting edge flow.
 
