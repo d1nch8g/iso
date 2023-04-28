@@ -17,7 +17,7 @@ This distribution is providing world's most advanced open-source tooling, workin
 <img style="align: center; max-width: 60%" src="./system.gif" />
 </p>
 
-## 📦 Pack - git based package manager
+## 📦 [Pack](https://fmnx.io/dev/pack) - git based package manager
 
 System provides package manager which main goal is to simplify process of package creation for developer and reuse power of git. This package manager has following features:
 
