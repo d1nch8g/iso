@@ -11,10 +11,11 @@ mkdir -p /mnt/archinstall/usr/local/share/backgrounds
 cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
 cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
 arch-chroot /mnt/archinstall dconf update
-sed -i s|/bin/bash|/usr/bin/zsh|g /mnt/archinstall/etc/passwd
-sed -i s/3/0/g /mnt/archinstall/boot/loader/loader.conf
+sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
+sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
 cp /usr/onlyoffice-desktopeditors.desktop /mnt/archinstall/usr/share/applications/onlyoffice-desktopeditors.desktop
 chmod a+rwx /mnt/archinstall/etc/share/applications/onlyoffice-desktopeditors.desktop
 arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
 cp -a /root/. /mnt/archinstall/home/<USER>
 chmod a+rwx -R /mnt/archinstall/home/<USER>
+sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
