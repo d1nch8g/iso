@@ -4,14 +4,14 @@
 
 <h2 align="center">FMNX linux distro</h2>
 
-[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://dancheg97.ru/dancheg97/fmnx/src/branch/main/LICENSE)
-[![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://dancheg97.ru/dancheg97/fmnx)
-[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-ru/fmnx)
+[![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://fmnx.io/dev/fmnx/src/branch/main/LICENSE)
+[![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://fmnx.io/dev/fmnx)
+[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-io/fmnx)
 [![Build Status](https://ci.fmnx.io/api/badges/dev/fmnx/status.svg)](https://ci.fmnx.io/dev/fmnx)
 
-You cannot win the software race in this modern, distributed, open-source world if you are not able to accumulate and integrate existing software into the end system, keeping its cutting edge flow.
+In this modern, distributed, open-source world we should be able to accumulate and integrate existing experience and knowledge, keeping our systems cutting edge flow.
 
-This distribution is providing world's most advanced open-source tooling, working properly without any adjustments out of the box.
+You can read the full documentation over here: [Documentation](https://docs.fmnx.io/).
 
 <p align="center">
 <img style="align: center; max-width: 60%" src="./system.gif" />
@@ -19,7 +19,7 @@ This distribution is providing world's most advanced open-source tooling, workin
 
 ## 📦 [Pack](https://fmnx.io/dev/pack) - git based package manager
 
-System provides package manager which main goal is to simplify process of package creation for developer and reuse power of git. This package manager has following features:
+System provides package manager which main goal is to simplify process of package creation for developer and reuse power of git. Pack has following features:
 
 - Install and update packages from git repositories
 - Compatible with all arch-based distros
