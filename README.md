@@ -23,7 +23,7 @@ System provides package manager which main goal is to simplify process of packag
 
 - Install and update packages from git repositories
 - Compatible with all arch-based distros
-- Easy to write config `pack.yml`
+- Easy to write config `.pack.yml`
 
 Full description can be found here: [repository](https://fmnx.io/dev/pack)
 

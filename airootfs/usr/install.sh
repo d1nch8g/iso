@@ -14,6 +14,12 @@ arch-chroot /mnt/archinstall dconf update
 sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
 sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
 cp /usr/onlyoffice-desktopeditors.desktop /mnt/archinstall/usr/share/applications/onlyoffice-desktopeditors.desktop
+mkdir -p /mnt/archinstall/etc/systemd/system/multi-user.target.wants
+cp /usr/docker.service /mnt/archinstall/etc/systemd/system/multi-user.target.wants/docker.service
+chmod a+rwx /mnt/archinstall/etc/systemd/system/multi-user.target.wants/docker.service
+mkdir -p /mnt/archinstall/etc/systemd/system/bluetooth.target.wants
+cp /usr/bluetooth.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
+chmod a+rwx /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
 chmod a+rwx /mnt/archinstall/etc/share/applications/onlyoffice-desktopeditors.desktop
 arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
 cp -a /root/. /mnt/archinstall/home/<USER>
