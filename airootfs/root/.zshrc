@@ -46,5 +46,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 
+export CHROME_EXECUTABLE="/usr/bin/chromium"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
