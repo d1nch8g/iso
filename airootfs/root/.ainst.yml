@@ -1,0 +1,78 @@
+additional-packages:
+  - bluez
+  - bluez-utils
+  - dconf
+  - dconf-editor
+  - chromium
+  - nautilus
+  - xorg-drivers
+  - networkmanager
+  - gedit
+  - eog
+  - nano
+  - git
+  - gnome-disk-utility
+  - gnome-keyring
+  - gnome-logs
+  - gnome-system-monitor
+  - gnome-shell-extensions
+  - gnome-tweaks
+  - gnome-characters
+  - gnome-font-viewer
+  - gnome-calculator
+  - gnome-calendar
+  - gnome-clocks
+  - gnome-music
+  - gnome-shell-extension-dash-to-dock
+  - gnome-shell-extension-gtile
+  - pipewire-jack
+  - geary
+  - deja-dup
+  - baobab
+  - xdg-user-dirs-gtk
+  - papirus-icon-theme
+  - ttf-droid
+  - adw-gtk-theme
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - zsh-theme-powerlevel10k-bin-git
+  - onlyoffice-bin
+  - visual-studio-code-bin
+  - docker
+  - docker-compose
+  - clang
+  - go
+  - flutter
+  - npm
+  - nodejs
+  - vlang
+  - rust
+  - neovim-git
+install-scripts:
+  - archinstall --silent --disk_layouts /usr/disk.json --config /usr/config.json --creds /usr/creds.json
+  - cp /etc/os-release /mnt/archinstall/etc/os-release
+  - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
+  - mkdir -p /mnt/archinstall/etc/dconf/profile
+  - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
+  - mkdir -p /mnt/archinstall/etc/dconf/db/local.d
+  - cp /etc/dconf/db/local.d/00-settings /mnt/archinstall/etc/dconf/db/local.d/00-settings
+  - mkdir -p /mnt/archinstall/etc/dconf/profile
+  - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
+  - mkdir -p /mnt/archinstall/usr/local/share/backgrounds
+  - cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
+  - cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
+  - arch-chroot /mnt/archinstall dconf update
+  - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
+  - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
+  - cp /usr/onlyoffice-desktopeditors.desktop /mnt/archinstall/usr/share/applications/onlyoffice-desktopeditors.desktop
+  - mkdir -p /mnt/archinstall/etc/systemd/system/multi-user.target.wants
+  - cp /usr/docker.service /mnt/archinstall/etc/systemd/system/multi-user.target.wants/docker.service
+  - chmod a+rwx /mnt/archinstall/etc/systemd/system/multi-user.target.wants/docker.service
+  - mkdir -p /mnt/archinstall/etc/systemd/system/bluetooth.target.wants
+  - cp /usr/bluetooth.service /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
+  - chmod a+rwx /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
+  - chmod a+rwx /mnt/archinstall/etc/share/applications/onlyoffice-desktopeditors.desktop
+  - arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
+  - cp -a /root/. /mnt/archinstall/home/<USER>
+  - chmod a+rwx -R /mnt/archinstall/home/<USER>
+  - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
