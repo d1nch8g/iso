@@ -3,7 +3,7 @@
 
 iso_name="fmnx"
 iso_label="FMNX_$(date +%Y%m)"
-iso_publisher="FMNX <https://fmnx.ru/>"
+iso_publisher="FMNX <https://fmnx.io/>"
 iso_application="FMNX Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="fmnx"

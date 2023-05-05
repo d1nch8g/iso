@@ -131,7 +131,6 @@ gnome-tweaks
 gnome-clocks
 gnome-font-viewer
 gnome-shell-extension-dash-to-dock
-gnome-shell-extension-gtile
 deja-dup
 baobab
 dconf-editor
@@ -141,7 +140,6 @@ nautilus
 xorg-drivers
 networkmanager
 gedit
-go
 eog
 nano
 git
@@ -152,5 +150,5 @@ adw-gtk-theme
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k-bin-git
-yay
-fmnx-install
+pack
+ainst
