@@ -5,7 +5,7 @@
 <h2 align="center">ISO image for fmnx linux distro</h2>
 
 [![Generic badge](https://img.shields.io/badge/LICENSE-GPLv3-orange.svg)](https://fmnx.io/core/iso/src/branch/main/LICENSE)
-[![Generic badge](https://img.shields.io/badge/GITEA-REPO-blue.svg)](https://fmnx.io/core/iso)
+[![Generic badge](https://img.shields.io/badge/GITEA-REPO-yellow.svg)](https://fmnx.io/core/iso)
 [![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-io/iso)
 [![Build Status](https://ci.fmnx.io/api/badges/core/iso/status.svg)](https://ci.fmnx.io/core/iso)
 
