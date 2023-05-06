@@ -42,10 +42,6 @@ export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/.pub-cache/bin
-
 export CHROME_EXECUTABLE="/usr/bin/chromium"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

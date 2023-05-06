@@ -1,0 +1,5 @@
+[credential]
+	helper = store
+[user]
+	name = <USER>
+	email = <EMAIL>

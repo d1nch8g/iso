@@ -1,55 +1,16 @@
-additional-packages:
-  - bluez
-  - bluez-utils
-  - dconf
-  - dconf-editor
-  - chromium
-  - nautilus
-  - xorg-drivers
-  - networkmanager
-  - gedit
-  - eog
-  - nano
-  - git
-  - gnome-disk-utility
-  - gnome-keyring
-  - gnome-logs
-  - gnome-system-monitor
-  - gnome-shell-extensions
-  - gnome-tweaks
-  - gnome-characters
-  - gnome-font-viewer
-  - gnome-calculator
-  - gnome-calendar
-  - gnome-clocks
-  - gnome-music
-  - gnome-shell-extension-dash-to-dock
-  - gnome-shell-extension-gtile
-  - pipewire-jack
-  - geary
-  - deja-dup
-  - baobab
-  - xdg-user-dirs-gtk
-  - papirus-icon-theme
-  - ttf-droid
-  - adw-gtk-theme
-  - zsh-autosuggestions
-  - zsh-syntax-highlighting
-  - zsh-theme-powerlevel10k-bin-git
-  - onlyoffice-bin
-  - visual-studio-code-bin
-  - docker
-  - docker-compose
-  - clang
-  - go
-  - flutter
-  - npm
-  - nodejs
-  - vlang
-  - rust
-  - neovim-git
 install-scripts:
-  - archinstall --silent --disk_layouts /usr/disk.json --config /usr/config.json --creds /usr/creds.json
+  - sed -i 's|<USER>|<AINST=USER>|g' /root/user.json
+  - sed -i 's|<PASS>|<AINST=PASS>|g' /root/user.json
+  - sed -i 's|<DISK>|<AINST=DISK>|g' /root/disk.json
+  - sed -i 's|<USER>|<AINST=USER>|g' .gitconfig
+  - sed -i 's|<EMAIL>|<AINST=EMAIL>|g' .gitconfig
+  - sed -i 's|<DISK>|<AINST=DISK>|g' /root/config.json
+  - sed -i 's|<USER>|<AINST=USER>|g' /root/config.json
+  - sed -i 's|<KBLAYOUT>|<AINST=KBLAYOUT>|g' /root/config.json
+  - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
+  - sed -i 's|<TIMEZONE>|<AINST=TIMEZONE>|g' /root/config.json
+  - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
+  - arch-chroot /mnt/archinstall sudo
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
   - mkdir -p /mnt/archinstall/etc/dconf/profile
@@ -73,6 +34,13 @@ install-scripts:
   - chmod a+rwx /mnt/archinstall/etc/systemd/system/bluetooth.target.wants/bluetooth.service
   - chmod a+rwx /mnt/archinstall/etc/share/applications/onlyoffice-desktopeditors.desktop
   - arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
-  - cp -a /root/. /mnt/archinstall/home/<USER>
-  - chmod a+rwx -R /mnt/archinstall/home/<USER>
+  - echo 'export GOPATH=$HOME/go' >> .zshrc
+  - echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> .zshrc
+  - echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >> .zshrc
+  - rm /root/config.json
+  - rm /root/disk.json
+  - rm /root/user.json
+  - rm /root/.ainst.yml
+  - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
+  - chmod a+rwx -R /mnt/archinstall/home/<AINST=USER>
   - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf

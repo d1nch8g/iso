@@ -4,8 +4,13 @@
     "list": [
       {
         "isMostVisited": false,
-        "title": "GITHUB",
-        "url": "https://github.com/"
+        "title": "CODEBERG",
+        "url": "https://codeberg.org/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "FMNX",
+        "url": "https://fmnx.io/"
       },
       {
         "isMostVisited": false,
@@ -14,8 +19,8 @@
       },
       {
         "isMostVisited": false,
-        "title": "DOCKER",
-        "url": "https://hub.docker.com/"
+        "title": "VLANG",
+        "url": "https://vlang.io/"
       },
       {
         "isMostVisited": false,
@@ -24,8 +29,8 @@
       },
       {
         "isMostVisited": false,
-        "title": "GNOME-EX",
-        "url": "https://extensions.gnome.org/"
+        "title": "GITHUB",
+        "url": "https://github.com/"
       },
       {
         "isMostVisited": false,
@@ -46,11 +51,6 @@
         "isMostVisited": false,
         "title": "CRATES",
         "url": "https://crates.io/"
-      },
-      {
-        "isMostVisited": false,
-        "title": "FMNX",
-        "url": "https://fmnx.io/"
       }
     ]
   },
