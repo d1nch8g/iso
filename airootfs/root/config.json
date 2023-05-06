@@ -25,6 +25,7 @@
     "path": "/usr/lib/python3.11/site-packages/archinstall/profiles/desktop.py"
   },
   "packages": [
+    "pack",
     "bluez",
     "bluez-utils",
     "dconf",
