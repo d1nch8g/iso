@@ -5,6 +5,7 @@ install-scripts:
   - sed -i 's|<USER>|<AINST=USER>|g' .gitconfig
   - sed -i 's|<EMAIL>|<AINST=EMAIL>|g' .gitconfig
   - sed -i 's|<DISK>|<AINST=DISK>|g' /root/config.json
+  - sed -i 's|<GFXDRIVER>|<AINST=GFXDRIVER>|g' /root/config.json
   - sed -i 's|<USER>|<AINST=USER>|g' /root/config.json
   - sed -i 's|<KBLAYOUT>|<AINST=KBLAYOUT>|g' /root/config.json
   - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
