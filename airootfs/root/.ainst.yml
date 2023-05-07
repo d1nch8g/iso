@@ -2,8 +2,8 @@ install-scripts:
   - sed -i 's|<USER>|<AINST=USER>|g' /root/creds.json
   - sed -i 's|<PASS>|<AINST=PASS>|g' /root/creds.json
   - sed -i 's|<DISK>|<AINST=DISK>|g' /root/disk.json
-  - sed -i 's|<USER>|<AINST=USER>|g' .gitconfig
-  - sed -i 's|<EMAIL>|<AINST=EMAIL>|g' .gitconfig
+  - sed -i 's|<USER>|<AINST=USER>|g' /root/.gitconfig
+  - sed -i 's|<EMAIL>|<AINST=EMAIL>|g' /root/.gitconfig
   - sed -i 's|<DISK>|<AINST=DISK>|g' /root/config.json
   - sed -i 's|<GFXDRIVER>|<AINST=GFXDRIVER>|g' /root/config.json
   - sed -i 's|<USER>|<AINST=USER>|g' /root/config.json
