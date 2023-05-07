@@ -1,6 +1,6 @@
 install-scripts:
-  - sed -i 's|<USER>|<AINST=USER>|g' /root/user.json
-  - sed -i 's|<PASS>|<AINST=PASS>|g' /root/user.json
+  - sed -i 's|<USER>|<AINST=USER>|g' /root/creds.json
+  - sed -i 's|<PASS>|<AINST=PASS>|g' /root/creds.json
   - sed -i 's|<DISK>|<AINST=DISK>|g' /root/disk.json
   - sed -i 's|<USER>|<AINST=USER>|g' .gitconfig
   - sed -i 's|<EMAIL>|<AINST=EMAIL>|g' .gitconfig
