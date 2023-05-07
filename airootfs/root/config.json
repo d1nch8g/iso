@@ -1,16 +1,24 @@
 {
-  "additional-repositories": ["multilib"],
-  "audio": "pipewire",
-  "config_version": "2.5.5",
-  "debug": false,
-  "desktop-environment": "gnome",
   "gfx_driver": "<GFXDRIVER>",
   "harddrives": ["/dev/<DISK>"],
   "hostname": "fmnx-<USER>",
   "keyboard-layout": "<KBLAYOUT>",
   "sys-language": "<SYSLANG>",
   "timezone": "<TIMEZONE>",
+  "version": "2.5.5",
+  "additional-repositories": [],
+  "audio": "pipewire",
+  "config_version": "2.5.5",
+  "debug": false,
+  "desktop-environment": "gnome",
   "bootloader": "systemd-bootctl",
+  "script": "guided",
+  "silent": false,
+  "swap": true,
+  "offline": false,
+  "no_pkg_lookups": false,
+  "sys-encoding": "UTF-8",
+  "services": ["docker", "bluetooth"],
   "nic": {
     "dhcp": true,
     "dns": null,
@@ -19,8 +27,6 @@
     "ip": null,
     "type": "nm"
   },
-  "no_pkg_lookups": false,
-  "offline": false,
   "profile": {
     "path": "/usr/lib/python3.11/site-packages/archinstall/profiles/desktop.py"
   },
@@ -73,11 +79,5 @@
     "vlang",
     "rust",
     "neovim-git"
-  ],
-  "services": ["docker", "bluetooth"],
-  "script": "guided",
-  "silent": false,
-  "swap": true,
-  "sys-encoding": "UTF-8",
-  "version": "2.5.5"
+  ]
 }
