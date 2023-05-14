@@ -31,6 +31,7 @@
     "path": "/usr/lib/python3.11/site-packages/archinstall/profiles/desktop.py"
   },
   "packages": [
+    "git",
     "pack",
     "bluez",
     "bluez-utils",
@@ -43,7 +44,6 @@
     "gedit",
     "eog",
     "nano",
-    "git",
     "gnome-disk-utility",
     "gnome-keyring",
     "gnome-logs",
