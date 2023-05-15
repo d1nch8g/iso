@@ -7,7 +7,7 @@
 [![Generic badge](https://img.shields.io/badge/LICENSE-GPL-orange.svg)](https://fmnx.su/core/iso/src/branch/main/LICENSE)
 [![Generic badge](https://img.shields.io/badge/FMNX-REPO-006db0.svg)](https://fmnx.su/core/iso)
 [![Generic badge](https://img.shields.io/badge/CODEBERG-REPO-45a3fb.svg)](https://codeberg.org/fmnx/iso)
-[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-io/iso)
+[![Generic badge](https://img.shields.io/badge/GITHUB-REPO-red.svg)](https://github.com/fmnx-su/iso)
 [![Build Status](https://ci.fmnx.su/api/badges/core/iso/status.svg)](https://ci.fmnx.su/core/iso)
 
 This repository contains scripts and configurations required to build `fmnx-iso` linux image. This iso is designed be minimal, but provide basic system overview for user to check hardware compatability and overall look.

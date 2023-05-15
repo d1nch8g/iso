@@ -16,7 +16,7 @@ steps:
     image: appleboy/drone-git-push
     settings:
       branch: main
-      remote: git@github.com:fmnx-io/iso.git
+      remote: git@github.com:fmnx-su/iso.git
       force: true
       commit: true
       ssh_key:
@@ -30,4 +30,4 @@ steps:
       force: true
       commit: true
       ssh_key:
-        from_secret: CBSSHKEY
+        from_secret: SSHKEY
