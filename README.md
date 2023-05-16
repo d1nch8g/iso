@@ -8,7 +8,7 @@
 [![Generic badge](https://img.shields.io/badge/license-gpl-orange.svg)](https://fmnx.su/core/iso/src/branch/main/LICENSE)
 [![Generic badge](https://img.shields.io/badge/fmnx-repo-006db0.svg)](https://fmnx.su/core/iso)
 [![Generic badge](https://img.shields.io/badge/codeberg-repo-45a3fb.svg)](https://codeberg.org/fmnx/iso)
-[![Generic badge](https://img.shields.io/badge/github-repo-red.svg)](https://github.com/fmnx-su/iso)
+[![Generic badge](https://img.shields.io/badge/github-repo-white.svg)](https://github.com/fmnx-su/iso)
 [![Build Status](https://ci.fmnx.su/api/badges/core/iso/status.svg)](https://ci.fmnx.su/core/iso)
 
 > **Warning!** Project is in alpha stage, API's are very likely to be changed.
