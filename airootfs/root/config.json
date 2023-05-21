@@ -66,18 +66,8 @@
     "zsh-autosuggestions",
     "zsh-syntax-highlighting",
     "zsh-theme-powerlevel10k-bin-git",
-    "onlyoffice-bin",
-    "visual-studio-code-bin",
     "docker",
     "docker-compose",
-    "clang",
-    "cmake",
-    "go",
-    "flutter",
-    "npm",
-    "nodejs",
-    "vlang",
-    "rust",
-    "neovim-git"
+    "go"
   ]
 }
