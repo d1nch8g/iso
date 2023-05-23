@@ -19,6 +19,7 @@
   "no_pkg_lookups": false,
   "sys-encoding": "UTF-8",
   "services": ["docker", "bluetooth"],
+  "kernels": ["linux-zen"],
   "nic": {
     "dhcp": true,
     "dns": null,
