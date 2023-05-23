@@ -1,14 +1,14 @@
 {
+  "version": "2.5.5",
+  "config_version": "2.5.5",
   "gfx_driver": "<GFXDRIVER>",
   "harddrives": ["/dev/<DISK>"],
   "hostname": "fmnx-<USER>",
   "keyboard-layout": "<KBLAYOUT>",
   "sys-language": "<SYSLANG>",
   "timezone": "<TIMEZONE>",
-  "version": "2.5.5",
   "additional-repositories": [],
   "audio": "pipewire",
-  "config_version": "2.5.5",
   "debug": false,
   "desktop-environment": "gnome",
   "bootloader": "systemd-bootctl",
@@ -28,7 +28,7 @@
     "type": "nm"
   },
   "profile": {
-    "path": "/usr/lib/python3.11/site-packages/archinstall/profiles/desktop.py"
+    "path": "/usr/lib/python*/site-packages/archinstall/profiles/desktop.py"
   },
   "packages": [
     "git",
@@ -68,6 +68,8 @@
     "zsh-theme-powerlevel10k-git",
     "docker",
     "docker-compose",
-    "go"
+    "go",
+    "flutter",
+    "hugo-git"
   ]
 }
