@@ -24,3 +24,7 @@ You can read the full documentation for the project at [docs page](https://docs.
 <p align="center">
 <img style="align: center; max-width: 60%" src="./system.gif" />
 </p>
+
+<!--
+ tb - https://extensions.gnome.org/extension/5669/compact-top-bar/
+ -->
