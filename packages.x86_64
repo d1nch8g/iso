@@ -131,6 +131,7 @@ gnome-tweaks
 gnome-characters
 gnome-font-viewer
 gnome-shell-extension-dash-to-dock-git
+gnome-shell-extension-compact-top-bar
 deja-dup
 baobab
 dconf-editor
