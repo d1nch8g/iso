@@ -33,7 +33,7 @@
   },
   "packages": [
     "git",
-    "pack",
+    "yay",
     "bluez",
     "bluez-utils",
     "dconf",
@@ -69,9 +69,7 @@
     "zsh-theme-powerlevel10k-git",
     "docker",
     "docker-compose",
-    "go",
-    "flutter",
-    "hugo-git"
+    "vscodium"
   ],
   "mirror-region": {
     "Russia": {
