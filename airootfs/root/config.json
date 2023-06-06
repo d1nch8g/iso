@@ -71,5 +71,21 @@
     "docker-compose",
     "vscodium",
     "pack"
-  ]
+  ],
+  "mirror-region": {
+    "Finland": {
+      "http://arch.kyberorg.fi/$repo/os/$arch": true,
+      "http://arch.mirror.far.fi/$repo/os/$arch": true,
+      "http://arch.yhtez.xyz/$repo/os/$arch": true,
+      "http://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch": true,
+      "http://mirror.5i.fi/archlinux/$repo/os/$arch": true,
+      "http://mirror.wuki.li/archlinux/$repo/os/$arch": true,
+      "https://arch.kyberorg.fi/$repo/os/$arch": true,
+      "https://arch.yhtez.xyz/$repo/os/$arch": true,
+      "https://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch": true,
+      "https://mirror.5i.fi/archlinux/$repo/os/$arch": true,
+      "https://mirror.srv.fail/archlinux/$repo/os/$arch": true,
+      "https://mirror.wuki.li/archlinux/$repo/os/$arch": true
+    }
+  }
 }
