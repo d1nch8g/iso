@@ -56,7 +56,7 @@
     "gnome-calculator",
     "gnome-calendar",
     "gnome-clocks",
-    "gnome-shell-extension-dash-to-dock-git",
+    "gnome-shell-extension-dash-to-dock",
     "gnome-shell-extension-compact-top-bar",
     "geary",
     "deja-dup",
@@ -67,7 +67,7 @@
     "adw-gtk-theme",
     "zsh-autosuggestions",
     "zsh-syntax-highlighting",
-    "zsh-theme-powerlevel10k-git",
+    "zsh-theme-powerlevel10k",
     "docker",
     "docker-compose",
     "vscodium"

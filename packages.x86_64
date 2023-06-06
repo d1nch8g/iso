@@ -130,7 +130,7 @@ gnome-shell-extensions
 gnome-tweaks
 gnome-characters
 gnome-font-viewer
-gnome-shell-extension-dash-to-dock-git
+gnome-shell-extension-dash-to-dock
 gnome-shell-extension-compact-top-bar
 deja-dup
 baobab
@@ -150,6 +150,6 @@ ttf-droid
 adw-gtk-theme
 zsh-autosuggestions
 zsh-syntax-highlighting
-zsh-theme-powerlevel10k-git
+zsh-theme-powerlevel10k
 pack
 ainst
