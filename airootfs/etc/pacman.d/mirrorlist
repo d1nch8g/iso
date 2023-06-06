@@ -8,15 +8,17 @@
 # Retrieved:  2023-05-23 13:23:43 UTC
 # Last Check: 2023-05-23 13:36:05 UTC
 
-Server = http://arch.kyberorg.fi/$repo/os/$arch
-Server = http://arch.mirror.far.fi/$repo/os/$arch
-Server = http://arch.yhtez.xyz/$repo/os/$arch
-Server = http://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch
-Server = http://mirror.5i.fi/archlinux/$repo/os/$arch
-Server = http://mirror.wuki.li/archlinux/$repo/os/$arch
-Server = https://arch.kyberorg.fi/$repo/os/$arch
-Server = https://arch.yhtez.xyz/$repo/os/$arch
-Server = https://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch
-Server = https://mirror.5i.fi/archlinux/$repo/os/$arch
-Server = https://mirror.srv.fail/archlinux/$repo/os/$arch
-Server = https://mirror.wuki.li/archlinux/$repo/os/$arch
+Server = http://archive-ru-mos.gaab-networks.de/arch/$repo/os/$arch
+Server = http://mirror.kamtv.ru/archlinux/$repo/os/$arch
+Server = http://mirror.nw-sys.ru/archlinux/$repo/os/$arch
+Server = http://mirror.surf/archlinux/$repo/os/$arch
+Server = http://mirror.truenetwork.ru/archlinux/$repo/os/$arch
+Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch
+Server = http://mirrors.powernet.com.ru/archlinux/$repo/os/$arch
+Server = https://archive-ru-mos.gaab-networks.de/arch/$repo/os/$arch
+Server = https://mirror.kamtv.ru/archlinux/$repo/os/$arch
+Server = https://mirror.nw-sys.ru/archlinux/$repo/os/$arch
+Server = https://mirror.surf/archlinux/$repo/os/$arch
+Server = https://mirror.truenetwork.ru/archlinux/$repo/os/$arch
+Server = https://mirror.yal.sl-chat.ru/archlinux/$repo/os/$arch
+Server = https://mirror.yandex.ru/archlinux/$repo/os/$arch

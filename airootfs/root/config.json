@@ -73,19 +73,21 @@
     "pack"
   ],
   "mirror-region": {
-    "Finland": {
-      "http://arch.kyberorg.fi/$repo/os/$arch": true,
-      "http://arch.mirror.far.fi/$repo/os/$arch": true,
-      "http://arch.yhtez.xyz/$repo/os/$arch": true,
-      "http://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch": true,
-      "http://mirror.5i.fi/archlinux/$repo/os/$arch": true,
-      "http://mirror.wuki.li/archlinux/$repo/os/$arch": true,
-      "https://arch.kyberorg.fi/$repo/os/$arch": true,
-      "https://arch.yhtez.xyz/$repo/os/$arch": true,
-      "https://archive-eu-hel.gaab-networks.de/arch/$repo/os/$arch": true,
-      "https://mirror.5i.fi/archlinux/$repo/os/$arch": true,
-      "https://mirror.srv.fail/archlinux/$repo/os/$arch": true,
-      "https://mirror.wuki.li/archlinux/$repo/os/$arch": true
+    "Russia": {
+      "http://archive-ru-mos.gaab-networks.de/arch/$repo/os/$arch": true,
+      "http://mirror.kamtv.ru/archlinux/$repo/os/$arch": true,
+      "http://mirror.nw-sys.ru/archlinux/$repo/os/$arch": true,
+      "http://mirror.surf/archlinux/$repo/os/$arch": true,
+      "http://mirror.truenetwork.ru/archlinux/$repo/os/$arch": true,
+      "http://mirror.yandex.ru/archlinux/$repo/os/$arch": true,
+      "http://mirrors.powernet.com.ru/archlinux/$repo/os/$arch": true,
+      "https://archive-ru-mos.gaab-networks.de/arch/$repo/os/$arch": true,
+      "https://mirror.kamtv.ru/archlinux/$repo/os/$arch": true,
+      "https://mirror.nw-sys.ru/archlinux/$repo/os/$arch": true,
+      "https://mirror.surf/archlinux/$repo/os/$arch": true,
+      "https://mirror.truenetwork.ru/archlinux/$repo/os/$arch": true,
+      "https://mirror.yal.sl-chat.ru/archlinux/$repo/os/$arch": true,
+      "https://mirror.yandex.ru/archlinux/$repo/os/$arch": true
     }
   }
 }
