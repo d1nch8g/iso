@@ -20,6 +20,7 @@
   "sys-encoding": "UTF-8",
   "services": ["docker", "bluetooth"],
   "kernels": ["linux-zen"],
+  "packages": ["docker"],
   "nic": {
     "dhcp": true,
     "dns": null,
