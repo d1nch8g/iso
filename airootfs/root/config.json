@@ -33,7 +33,6 @@
   },
   "packages": [
     "git",
-    "yay",
     "bluez",
     "bluez-utils",
     "dconf",
@@ -70,6 +69,7 @@
     "zsh-theme-powerlevel10k",
     "docker",
     "docker-compose",
-    "vscodium"
+    "vscodium",
+    "pack"
   ]
 }

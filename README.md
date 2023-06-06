@@ -26,5 +26,5 @@ You can read the full documentation for the project at [docs page](https://docs.
 </p>
 
 <!--
- tb - https://extensions.gnome.org/extension/5669/compact-top-bar/
- -->
+tb - https://extensions.gnome.org/extension/5669/compact-top-bar/
+-->
