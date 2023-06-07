@@ -10,6 +10,7 @@ install-scripts:
   - sed -i 's|<KBLAYOUT>|<AINST=KBLAYOUT>|g' /root/config.json
   - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
   - sed -i 's|<TIMEZONE>|<AINST=TIMEZONE>|g' /root/config.json
+  - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf

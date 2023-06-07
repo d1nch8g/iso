@@ -29,7 +29,7 @@ alias grabc="gdbus call --session --dest org.gnome.Shell.Screenshot --object-pat
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/dancheg97/.zshrc'
+zstyle :compinstall filename '/home/<USER>/.zshrc'
 
 autoload -Uz compinit
 compinit
