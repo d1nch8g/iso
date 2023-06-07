@@ -34,7 +34,6 @@
   },
   "mirror-region": {
     "Russia": {
-      "http://archive-ru-mos.gaab-networks.de/arch/$repo/os/$arch": true,
       "http://mirror.kamtv.ru/archlinux/$repo/os/$arch": true,
       "http://mirror.nw-sys.ru/archlinux/$repo/os/$arch": true,
       "http://mirror.surf/archlinux/$repo/os/$arch": true,

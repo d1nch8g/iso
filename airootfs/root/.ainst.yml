@@ -39,7 +39,7 @@ install-scripts:
   - rm /root/.automated_script.sh
   - rm /root/.config/autostart/ainst.desktop
   - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
-  - chown -R <AINST=USER> /mnt/archinstall/home/<AINST=USER>
+  - arch-chroot /mnt/archinstall chown -R <AINST=USER> /home/<AINST=USER>
   - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
   - sed -i "s|rootfstype=btrfs|rootfstype=btrfs quiet loglevel=0 systemd.show_status=0|g" /mnt/archinstall/boot/loader/entries/**.conf
   - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
