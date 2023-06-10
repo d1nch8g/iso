@@ -11,28 +11,31 @@ install-scripts:
   - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
   - sed -i 's|<TIMEZONE>|<AINST=TIMEZONE>|g' /root/config.json
   - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
+
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
+  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez bluez-utils dconf dconf-editor chromium nautilus xorg-drivers networkmanager gedit eog nano gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-tweaks gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack
+  - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
+
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
-  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez bluez-utils dconf dconf-editor chromium nautilus xorg-drivers networkmanager gedit eog nano gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-tweaks gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack
+  - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
+  - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
+  - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
+  - sed -i "s|rootfstype=btrfs|rootfstype=btrfs quiet loglevel=0 systemd.show_status=0|g" /mnt/archinstall/boot/loader/entries/**.conf
+
   - mkdir -p /mnt/archinstall/etc/dconf/profile
   - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
   - mkdir -p /mnt/archinstall/etc/dconf/db/local.d
   - cp /etc/dconf/db/local.d/00-settings /mnt/archinstall/etc/dconf/db/local.d/00-settings
   - mkdir -p /mnt/archinstall/etc/dconf/profile
   - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
+
   - mkdir -p /mnt/archinstall/usr/local/share/backgrounds
   - cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
   - cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
-  - arch-chroot /mnt/archinstall dconf update
-  - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
-  - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
-  - cp /usr/onlyoffice-desktopeditors.desktop /mnt/archinstall/usr/share/applications/onlyoffice-desktopeditors.desktop
-  - chmod a+rwx /mnt/archinstall/usr/share/applications/onlyoffice-desktopeditors.desktop
   - arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
-  - echo 'export GOPATH=$HOME/go' >> .zshrc
-  - echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> .zshrc
-  - echo 'export PATH=$PATH:$HOME/.pub-cache/bin' >> .zshrc
+  - arch-chroot /mnt/archinstall dconf update
+
   - rm /root/config.json
   - rm /root/disk.json
   - rm /root/creds.json
@@ -41,6 +44,3 @@ install-scripts:
   - rm /root/.config/autostart/ainst.desktop
   - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
   - arch-chroot /mnt/archinstall chown -R <AINST=USER> /home/<AINST=USER>
-  - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
-  - sed -i "s|rootfstype=btrfs|rootfstype=btrfs quiet loglevel=0 systemd.show_status=0|g" /mnt/archinstall/boot/loader/entries/**.conf
-  - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
