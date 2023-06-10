@@ -19,3 +19,7 @@ This repository contains scripts and configurations required to build `fmnx-iso`
 make install
 make build
 ```
+
+<!--
+Fix login screen when booting in system, mb that's a gnome issue.
+-->
