@@ -128,19 +128,14 @@ gnome-logs
 gnome-system-monitor
 gnome-shell-extensions
 gnome-tweaks
-gnome-characters
-gnome-font-viewer
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-compact-top-bar
-deja-dup
-baobab
 dconf-editor
 chromium
 simple-scan
 nautilus
 xorg-drivers
 networkmanager
-gedit
 eog
 nano
 git
@@ -151,5 +146,4 @@ adw-gtk-theme
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
-pack
 ainst
