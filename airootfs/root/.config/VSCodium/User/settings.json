@@ -1,13 +1,11 @@
 {
   "editor.rulers": [80],
-  "workbench.statusBar.visible": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
-  "window.newWindowDimensions": "fullscreen",
-  "window.titleBarStyle": "custom",
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
+  "window.titleBarStyle": "custom",
   "redhat.telemetry.enabled": false,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "smooth",
@@ -17,37 +15,6 @@
   "git.enableSmartCommit": true,
   "git.suggestSmartCommit": false,
   "git.useEditorAsCommitInput": false,
-  "git.postCommitCommand": "sync",
   "git.confirmSync": false,
-  "git.autofetch": true,
-  "git.ignoreRebaseWarning": true,
-  "terminal.integrated.tabs.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "go.lintTool": "golangci-lint",
-  "breadcrumbs.enabled": false,
-  "files.associations": {
-    "*.tmpl": "html"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  "git.autofetch": true
 }
