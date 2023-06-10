@@ -13,14 +13,9 @@
 
 > **Warning!** Project is in alpha stage, API's are very likely to be changed.
 
-This repository contains scripts and configurations required to build `fmnx-iso` linux image. This iso is designed be minimal, but provide basic system overview for user to check hardware compatability and overall look.
+This repository contains scripts and configurations required to build `fmnx-iso` linux image. This ISO contains minimal gnome, ainst installer and set of scripts required to build fmnx linux system. You can build it by running commands:
 
-- Minimal image
-- Network installaion
-- Basic system overview
-
-You can read the full documentation for the project at [docs page](https://docs.fmnx.su/).
-
-<p align="center">
-<img style="align: center; max-width: 60%" src="./system.gif" />
-</p>
+```sh
+make install
+make build
+```

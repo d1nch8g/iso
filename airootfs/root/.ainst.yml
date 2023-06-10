@@ -13,8 +13,6 @@ install-scripts:
   - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
 
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
-  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez bluez-utils dconf dconf-editor chromium nautilus xorg-drivers networkmanager gedit eog nano gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-tweaks gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack
-  - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
 
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
@@ -22,6 +20,9 @@ install-scripts:
   - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
   - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
   - sed -i "s|rootfstype=btrfs|rootfstype=btrfs quiet loglevel=0 systemd.show_status=0|g" /mnt/archinstall/boot/loader/entries/**.conf
+
+  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez-utils dconf-editor chromium nautilus xorg-drivers gedit eog gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack
+  - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
 
   - mkdir -p /mnt/archinstall/etc/dconf/profile
   - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
