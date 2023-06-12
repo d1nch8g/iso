@@ -45,5 +45,6 @@ install-scripts:
   - rm /root/.ainst.yml
   - rm /root/.automated_script.sh
   - rm /root/.config/autostart/ainst.desktop
+  - rm /root/.zlogin
   - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
   - arch-chroot /mnt/archinstall chown -R <AINST=USER> /home/<AINST=USER>
