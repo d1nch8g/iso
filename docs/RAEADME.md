@@ -5,7 +5,7 @@
 
 Since GNU/Linux is the only system, that equally belongs to every person in the world without any exceptions, we try to make linux better place for every it's user.
 
-This distribution provides world's most advanced free/open-source tooling, working properly without any adjustments out of the box. The more people we involve in linux development, the better system it will become, that is why fmnx was born.
+This distribution provides world's most advanced free/open-source tooling, working properly without any adjustments out of the box. The more people we involve in linux development, the better system it will become, that is why this project was born.
 
 ---
 
