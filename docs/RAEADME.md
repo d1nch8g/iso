@@ -1,7 +1,6 @@
 <p align="center">
-<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" width="238px" height="238px" src="https://fmnx.su/dancheg97/Pictures/raw/branch/main/iso.png" />
+<img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" width="238px" height="238px" src="https://fmnx.su/core/iso/raw/branch/main/docs/images/free.png" />
 </p>
-
 
 Since GNU/Linux is the only system, that equally belongs to every person in the world without any exceptions, we try to make linux better place for every it's user.
 
