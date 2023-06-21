@@ -30,6 +30,7 @@ f2fs-tools
 fatresize
 fsarchiver
 gnu-netcat
+gnupg
 gpart
 gpm
 gptfdisk

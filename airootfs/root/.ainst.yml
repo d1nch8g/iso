@@ -13,12 +13,18 @@ install-scripts:
   - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
   - sed -i "s|<USER>|<AINST=USER>|g" /root/gen-key-script
   - sed -i "s|<EMAIL>|<AINST=EMAIL>|g" /root/gen-key-script
-  - gpg --batch --gen-key gen-key-script
+  - sed -i "s|<PASS>|<AINST=PASS>|g" /root/gen-key-script
+  - sed -i "s|john@doe.com|<AINST=EMAIL>|g" /etc/makepkg.conf
+  - sed -i "s|John Doe|<AINST=USER>|g" /etc/makepkg.conf
+
 
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
 
+  - gpg --batch --gen-key gpg-key-script
+
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
+  - cp /etc/makepkg.conf /mnt/archinstall/etc/makepkg.conf
   - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
   - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
   - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
