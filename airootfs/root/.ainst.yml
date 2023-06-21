@@ -11,6 +11,9 @@ install-scripts:
   - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
   - sed -i 's|<TIMEZONE>|<AINST=TIMEZONE>|g' /root/config.json
   - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
+  - sed -i "s|<USER>|<AINST=USER>|g" /root/gen-key-script
+  - sed -i "s|<EMAIL>|<AINST=EMAIL>|g" /root/gen-key-script
+  - gpg --batch --gen-key gen-key-script
 
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
 
