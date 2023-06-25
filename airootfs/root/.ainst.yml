@@ -11,12 +11,12 @@ install-scripts:
   - sed -i 's|<SYSLANG>|<AINST=SYSLANG>|g' /root/config.json
   - sed -i 's|<TIMEZONE>|<AINST=TIMEZONE>|g' /root/config.json
   - sed -i "s|<USER>|<AINST=USER>|g" /root/.zshrc
-  - sed -i "s|<USER>|<AINST=USER>|g" /root/gen-key-script
-  - sed -i "s|<EMAIL>|<AINST=EMAIL>|g" /root/gen-key-script
-  - sed -i "s|<PASS>|<AINST=PASS>|g" /root/gen-key-script
+  - sed -i "s|<USER>|<AINST=USER>|g" /root/gpg-key-script
+  - sed -i "s|<EMAIL>|<AINST=EMAIL>|g" /root/gpg-key-script
+  - sed -i "s|<PASS>|<AINST=PASS>|g" /root/gpg-key-script
   - sed -i "s|john@doe.com|<AINST=EMAIL>|g" /etc/makepkg.conf
   - sed -i "s|John Doe|<AINST=USER>|g" /etc/makepkg.conf
-
+  - sed -i "s|#PACKAGER|PACKAGER|g" /etc/makepkg.conf
 
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
 
