@@ -1,5 +1,14 @@
 pwd := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
+gitadd:
+	git remote add github https://github.com/fmnx-su/iso
+	git remote add codeberg https://codeberg.org/fmnx/iso
+
+push:
+	git push
+	git push github
+	git push codeberg
+
 install:
 	pack -Syuq qemu-desktop edk2-ovmf archiso archinstall balena-etcher
 
