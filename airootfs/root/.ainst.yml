@@ -55,5 +55,6 @@ install-scripts:
   - rm /root/.automated_script.sh
   - rm /root/.config/autostart/ainst.desktop
   - rm /root/.zlogin
+  - rm /root/gpg-key-script
   - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
   - arch-chroot /mnt/archinstall chown -R <AINST=USER> /home/<AINST=USER>
