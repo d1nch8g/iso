@@ -32,7 +32,7 @@ install-scripts:
   - sed -i "s|root|<AINST=USER>|g" /etc/gdm/custom.conf
   - cp /etc/gdm/custom.conf /mnt/archinstall/etc/gdm/custom.conf
 
-  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez-utils dconf-editor chromium nautilus xorg-drivers gedit eog gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack
+  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez-utils dconf-editor chromium nautilus xorg-drivers gedit eog gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack nano-syntax-highlighting-git
   - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
 
   - mkdir -p /mnt/archinstall/etc/dconf/profile
