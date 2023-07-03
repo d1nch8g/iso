@@ -25,7 +25,7 @@ install-scripts:
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
   - cp /etc/makepkg.conf /mnt/archinstall/etc/makepkg.conf
-  - cp /etc/nanorc /etc/nanorc
+  - cp /etc/nanorc /mnt/archinstall/etc/nanorc
   - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
   - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
   - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
