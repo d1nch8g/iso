@@ -19,6 +19,37 @@ make install
 make build
 ```
 
-<!--
-Fix login screen when booting in system, mb that's a gnome issue.
--->
+Before building ISO image, consider setting up your own infrastructure, example can be [found here](https://fmnx.su/core/infr). To add additional packages from AUR to resulting build you can use packages.sh script. It loads `PKGBUILD's` from `AUR`, builds them and pushes to fmnx core registry. Pack used to build and push [packages](https://fmnx.su/core/pack).
+
+---
+
+## Airootfs:
+
+Folder which contains resulting file system of live ISO image. All files located in this folder will be present in resulting ISO image.
+
+- `airootfs/etc/dconf/db/local.d/00-settings` - gnome settings in live ISO image
+- `airootfs/etc/gdm/custom.conf` - automatic login GDM settings
+- `airootfs/etc/pacman.conf` - pacman configuration for live ISO image (used when building ISO and transfered to resulting system aswell)
+- `airootfs/etc/nanorc` - config for nano
+- `airootfs/etc/passwd` - user and chosen shell
+- `airootfs/root` - root folder with configs for archinstall, ainst, gpg setup and git. This folder will be transfered to resulting system.
+- `airootfs/root/.config` - configurations and settings for different applications
+- `airootfs/usr/local/share/backgrounds` - background image and system logo
+
+## Efiboot/loader, syslinux:
+
+Configurations for bootloader:
+
+- timeouts
+- installation directories
+- conf path
+- iso boot options
+- iso background color
+- iso labels
+
+## Root directory:
+
+- `packages.sh` - script that will load packages from AUR, build them and push to your personal repository.
+- `packages.x86_64` - list of packages that will be added to resulting ISO image.
+- `profiledef.sh` - different ISO parameters (name, label, architecture, etc)
+        
