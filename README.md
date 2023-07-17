@@ -52,8 +52,3 @@ Configurations for bootloader:
 - `packages.sh` - script that will load packages from AUR, build them and push to your personal repository.
 - `packages.x86_64` - list of packages that will be added to resulting ISO image.
 - `profiledef.sh` - different ISO parameters (name, label, architecture, etc).
-
-<!--
-TODO
-git config --global user.signingkey SIGNKEYID
--->

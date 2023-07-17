@@ -19,13 +19,8 @@
       },
       {
         "isMostVisited": false,
-        "title": "VLANG",
-        "url": "https://vlang.io/"
-      },
-      {
-        "isMostVisited": false,
-        "title": "HABR",
-        "url": "https://habr.com/"
+        "title": "ICONS",
+        "url": "https://flaticon.com/"
       },
       {
         "isMostVisited": false,
@@ -51,6 +46,11 @@
         "isMostVisited": false,
         "title": "CRATES",
         "url": "https://crates.io/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "DOCKER",
+        "url": "https://hub.docker.com/"
       }
     ]
   },

@@ -12,6 +12,7 @@
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "afterDelay",
   "explorer.confirmDelete": false,
+  "git.enableCommitSigning": true,
   "git.enableSmartCommit": true,
   "git.suggestSmartCommit": false,
   "git.useEditorAsCommitInput": false,
