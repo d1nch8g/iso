@@ -1,4 +1,7 @@
+# Scripts that will be sequentially runned by ainst installer. On error execution will be stopped.
+
 install-scripts:
+  # Setting installation parameters.
   - sed -i 's|<USER>|<AINST=USER>|g' /root/creds.json
   - sed -i 's|<PASS>|<AINST=PASS>|g' /root/creds.json
   - sed -i 's|<DISK>|<AINST=DISK>|g' /root/disk.json
@@ -18,21 +21,23 @@ install-scripts:
   - sed -i "s|John Doe|<AINST=USER>|g" /etc/makepkg.conf
   - sed -i "s|#PACKAGER|PACKAGER|g" /etc/makepkg.conf
 
+  # Running installation script.
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
 
+  # Generating GnuPG key.
   - gpg --batch --gen-key gpg-key-script
 
+  # Transfering/configuring system parameters.
   - cp /etc/os-release /mnt/archinstall/etc/os-release
   - cp /etc/pacman.conf /mnt/archinstall/etc/pacman.conf
   - cp /etc/makepkg.conf /mnt/archinstall/etc/makepkg.conf
   - cp /etc/nanorc /mnt/archinstall/etc/nanorc
   - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
-  - sed -i "s/3/0/g" /mnt/archinstall/boot/loader/loader.conf
-  - sed -i "s|Arch|FMNX|g" /mnt/archinstall/boot/loader/entries/**.conf
-  - sed -i "s|rootfstype=btrfs|rootfstype=btrfs quiet loglevel=0 systemd.show_status=0|g" /mnt/archinstall/boot/loader/entries/**.conf
   - sed -i "s|root|<AINST=USER>|g" /etc/gdm/custom.conf
   - cp /etc/gdm/custom.conf /mnt/archinstall/etc/gdm/custom.conf
+  - sed -i "s|GRUB_TIMEOUT=5|GRUB_TIMEOUT=0|g" /mnt/archinstall/etc/grub.d/00_header
 
+  # Copying UI parameters.
   - mkdir -p /mnt/archinstall/etc/dconf/profile
   - cp /etc/dconf/profile/user /mnt/archinstall/etc/dconf/profile/user
   - mkdir -p /mnt/archinstall/etc/dconf/db/local.d
@@ -42,15 +47,18 @@ install-scripts:
   - mkdir -p /mnt/archinstall/usr/local/share/pacman
   - cp -r /usr/local/share/pacman/keyrings /mnt/archinstall/usr/local/share/pacman/keyrings
 
+  # Installing additional packages, adding user to docker group.
   - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar git bluez-utils dconf-editor chromium nautilus xorg-drivers gedit eog gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-calculator gnome-calendar gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack nano-syntax-highlighting-git
   - arch-chroot /mnt/archinstall usermod -aG docker <AINST=USER>
 
+  # Setting up background image and logo.
   - mkdir -p /mnt/archinstall/usr/local/share/backgrounds
   - cp /usr/local/share/backgrounds/wallpaper.jpg /mnt/archinstall/usr/local/share/backgrounds/wallpaper.jpg
   - cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
   - arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
   - arch-chroot /mnt/archinstall dconf update
-
+  
+  # Transfering contents of root directory to new user.
   - rm /root/config.json
   - rm /root/disk.json
   - rm /root/creds.json

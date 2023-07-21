@@ -10,7 +10,7 @@ push:
 	git push codeberg
 
 install:
-	pack -Syuq qemu-desktop edk2-ovmf archiso archinstall balena-etcher
+	pack -Syuq qemu-desktop edk2-ovmf archiso archinstall balena-etcher fuse2 vmware-workstation
 
 .PHONY: build
 build:

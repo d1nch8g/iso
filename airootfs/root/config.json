@@ -11,7 +11,7 @@
   "audio": "pipewire",
   "debug": false,
   "desktop-environment": "gnome",
-  "bootloader": "systemd-bootctl",
+  "bootloader": "grub-install",
   "script": "guided",
   "silent": false,
   "swap": true,
