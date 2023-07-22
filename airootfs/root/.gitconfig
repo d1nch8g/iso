@@ -3,5 +3,3 @@
 [user]
 	name = <USER>
 	email = <EMAIL>
-[commit]
-	gpgsign = true
