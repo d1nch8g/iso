@@ -1,4 +1,4 @@
-# Scripts that will be sequentially runned by ainst installer. On error execution will be stopped.
+# Scripts that will be sequentially executed by ainst installer.
 
 install-scripts:
   # Setting installation parameters.
@@ -35,7 +35,8 @@ install-scripts:
   - sed -i "s|/bin/bash|/usr/bin/zsh|g" /mnt/archinstall/etc/passwd
   - sed -i "s|root|<AINST=USER>|g" /etc/gdm/custom.conf
   - cp /etc/gdm/custom.conf /mnt/archinstall/etc/gdm/custom.conf
-  - sed -i "s|GRUB_TIMEOUT=5|GRUB_TIMEOUT=0|g" /mnt/archinstall/etc/grub.d/00_header
+  - cp /etc/default/grub /mnt/archinstall/etc/default/grub
+  - arch-chroot /mnt/archinstall grub-mkconfig -o /boot/grub/grub.cfg
 
   # Copying UI parameters.
   - mkdir -p /mnt/archinstall/etc/dconf/profile
@@ -57,7 +58,7 @@ install-scripts:
   - cp /usr/local/share/backgrounds/fmnx-linux.png /mnt/archinstall/usr/local/share/backgrounds/fmnx-linux.png
   - arch-chroot /mnt/archinstall xdg-icon-resource install --novendor --size 512 /usr/local/share/backgrounds/fmnx-linux.png
   - arch-chroot /mnt/archinstall dconf update
-  
+
   # Transfering contents of root directory to new user.
   - rm /root/config.json
   - rm /root/disk.json
@@ -69,3 +70,5 @@ install-scripts:
   - rm /root/gpg-key-script
   - cp -a /root/. /mnt/archinstall/home/<AINST=USER>
   - arch-chroot /mnt/archinstall chown -R <AINST=USER> /home/<AINST=USER>
+  - cp -a /root/.zshrc /mnt/archinstall/root/.zshrc
+  - cp -a /root/.p10k.zsh /mnt/archinstall/root/.p10k.zsh

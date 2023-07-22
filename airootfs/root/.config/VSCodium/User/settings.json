@@ -6,6 +6,8 @@
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
   "window.titleBarStyle": "custom",
+  "window.newWindowDimensions": "fullscreen",
+  "window.restoreFullscreen": true,
   "redhat.telemetry.enabled": false,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "smooth",
@@ -15,6 +17,5 @@
   "git.enableSmartCommit": true,
   "git.suggestSmartCommit": false,
   "git.useEditorAsCommitInput": false,
-  "git.confirmSync": false,
-  "git.autofetch": true
+  "git.confirmSync": false
 }
