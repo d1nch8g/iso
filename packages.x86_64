@@ -126,7 +126,6 @@ gnome-control-center
 gnome-settings-daemon
 gnome-keyring
 gnome-logs
-gnome-system-monitor
 gnome-shell-extensions
 gnome-tweaks
 gnome-shell-extension-dash-to-dock
@@ -149,3 +148,4 @@ zsh-theme-powerlevel10k
 nano-syntax-highlighting-git
 ainst
 epiphany
+pack

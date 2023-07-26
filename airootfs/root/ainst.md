@@ -29,6 +29,6 @@ List of installed and adjusted programs:
 - `docker` - [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/) will be installed and enabled. You can start using them right after installation.
 - `pack` - [pack](https://fmnx.su/core/pack) is decentralized package manager based on pacman. Pack works as a wrapper over pacman providing additional functionality for software delivery and pacman database management.
 
-All this combined can speed-up new developers integration - newcomers don't have to spend time adjusting environment, a tools are packed and working properly out of the box.
+All this combined can speed up new developer integration - newcomers don't have to spend time adjusting environment, tools are packed and working properly out of the box.
 
 You can also take a look at os setup script in [this repository](https://fmnx.su/dancheg97/os). This script will install go, gRPC toolchain, flutter, distro development tooling. You can start with this example to write your own os setup script.
