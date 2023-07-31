@@ -64,6 +64,7 @@ install-scripts:
   - rm /root/disk.json
   - rm /root/creds.json
   - rm /root/ainst.yml
+  - rm /root/ainst.md
   - rm /root/gpg-key-script
   - rm /root/.automated_script.sh
   - rm /root/.config/autostart/ainst.desktop
