@@ -16,19 +16,31 @@ Instead of rebuilding software from scratch, we focus on ability to reuse and ac
 
 ---
 
+## GNU/Linux Egalitarism
+
+Egalitarianism (from French égal 'equal') is a school of thought within political philosophy that builds on the concept of social equality, prioritizing it for all people. Egalitarian doctrines are generally characterized by the idea that all humans are equal in fundamental worth or moral status. As such, all citizens of a state should be accorded equal rights and treatment under the law.
+
+Most operating systems do not provide people with the [digital freedoms](https://www.gnu.org/philosophy/free-sw.en.html) that are key to egalitarian society:
+
+- The freedom to run the program as you wish, for any purpose (freedom 0).
+- The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+- The freedom to redistribute copies so you can help others (freedom 2).
+- The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+Other operating systems lead to elitism - unlimited power over software users. Modern society should avoid proprietary programs, as they have a harmfull effect on people's attitudes on programs and development process.
+
+---
+
 ## Software & Features
 
-List of installed and adjusted programs:
+List of installed software:
 
-- `linux-zen` - result of a collaborative effort of kernel hackers to provide the best Linux kernel possible for everyday systems. Some more details can be found [here](https://liquorix.net).
 - `gnome` - originally an acronym for GNU Network Object Model Environment, is a free and open-source desktop environment for Linux and other Unix-like operating systems.
 - `vscodium` - free/libre open source software binaries of VS Code. VSCodium is shipped with configurations to better fit in gnome and faster get started with [git](https://git-scm.com/) and [docker](https://www.docker.com/).
 - `git` - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Name and email configured automatically after installation, credential helper is enabled by default.
 - `terminal` - [zsh](https://wikipedia.org/wiki/Zsh) comes as default shell. Autocompletion, syntax highlighting, suggestions and p10k theming already configured.
 - `gpg` - installer will automatically generate [gpg](https://gnupg.org/) keys, you can start creating and shipping arch packages instantly after installation.
 - `docker` - [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/) will be installed and enabled. You can start using them right after installation.
-- `pack` - [pack](https://fmnx.su/core/pack) is decentralized package manager based on pacman. Pack works as a wrapper over pacman providing additional functionality for software delivery and pacman database management.
+- `pack` - decentralized package manager based on pacman. Pack works as a wrapper over pacman providing additional functionality for package delivery and database management.
 
-All this combined can speed up new developer integration - newcomers don't have to spend time adjusting environment, tools are packed and working properly out of the box.
-
-You can also take a look at os setup script in [this repository](https://fmnx.su/dancheg97/os). This script will install go, gRPC toolchain, flutter, distro development tooling. You can start with this example to write your own os setup script.
+Take a look at example of [os setup script](https://fmnx.su/dancheg97/os). This script will install go, gRPC toolchain, flutter, qemu, vmware and other development tooling.

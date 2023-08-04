@@ -6,5 +6,6 @@
       "!password": "<PASS>",
       "sudo": true
     }
-  ]
+  ],
+  "encryption_password": "<PASS>"
 }

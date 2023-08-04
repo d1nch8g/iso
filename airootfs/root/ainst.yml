@@ -4,7 +4,6 @@ install-scripts:
   # Setting installation parameters.
   - sed -i 's|<USER>|{{USER}}|g' /root/creds.json
   - sed -i 's|<PASS>|{{PASS}}|g' /root/creds.json
-  - sed -i 's|<DISK>|{{DISK}}|g' /root/disk.json
   - sed -i 's|<USER>|{{USER}}|g' /root/.gitconfig
   - sed -i 's|<EMAIL>|{{EMAIL}}|g' /root/.gitconfig
   - sed -i 's|<DISK>|{{DISK}}|g' /root/config.json
