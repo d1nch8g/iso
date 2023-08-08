@@ -11,6 +11,8 @@ push:
 
 install:
 	pack -Syuq qemu-desktop edk2-ovmf archiso archinstall fuse2 vmware-workstation
+
+net:
 	sudo modprobe -a vmw_vmci vmmon
 	sudo systemctl start vmware-networks.service
 

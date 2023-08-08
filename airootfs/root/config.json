@@ -25,7 +25,7 @@
             },
             "mount_options": [],
             "mountpoint": "/boot",
-            "obj_id": "be8be623-d94b-4fca-b8d0-305a5707d618",
+            "obj_id": "43a55ebe-73f3-4e80-9239-cd1daed8c536",
             "start": {
               "sector_size": null,
               "total_size": null,
@@ -83,7 +83,7 @@
             },
             "mount_options": ["compress=zstd"],
             "mountpoint": null,
-            "obj_id": "4581b585-c95a-4fb5-b34d-e34403efb6bf",
+            "obj_id": "46abe30b-3e29-48c2-999a-f0fbdda1f555",
             "start": {
               "sector_size": null,
               "total_size": null,

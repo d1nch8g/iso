@@ -20,6 +20,10 @@ install-scripts:
   - sed -i "s|John Doe|{{USER}}|g" /etc/makepkg.conf
   - sed -i "s|#PACKAGER|PACKAGER|g" /etc/makepkg.conf
 
+  # TODO: remove when fixed automatically
+  - sudo systemctl enable systemd-timesyncd.service
+  - sudo systemctl start systemd-timesyncd.service
+
   # Running installation script.
   - archinstall --silent --disk_layouts /root/disk.json --config /root/config.json --creds /root/creds.json
 
