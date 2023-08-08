@@ -98,7 +98,7 @@
       }
     ]
   },
-  "services": ["docker", "bluetooth"],
+  "services": ["docker"],
   "disk_encryption": {
     "encryption_type": "luks",
     "partitions": []
