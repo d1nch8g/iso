@@ -21,7 +21,6 @@ build:
 	sudo rm -rf tmp
 	sudo rm -rf build
 	mkdir -p tmp
-	mkdir -p airootfs/root/go/bin
 	sudo mkarchiso -v -w tmp -o build .
 
 run:
