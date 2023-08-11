@@ -31,8 +31,10 @@ Instead of rebuilding software from scratch, we focus on ability to reuse and ac
 - [gpg](https://gnupg.org/), [git](https://git-scm.com/) and [docker](https://www.docker.com/) are set up by default during installation
 - [Ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) is default browser, [duckduckgo](https://duckduckgo.com/) - default search engine
 - [VSCodium](https://vscodium.com/) is preinstalled, some default settings have been changed to better fit into distribution
-- Terminal with completions, syntax highlighting, suggestions, powerlevel10k styling, nano editor with highlighting
+- Comforable to use terminal with completions, syntax highlighting, suggestions, powerlevel10k styling
 - Password you pick is shared for sudo, root, gpg and disk encryption (you can change it later)
 - Gnome desktop environment with minimal set of utilities, applications
+- Git config with nano editor, user name+email, credential helper
+- Nano editor has syntax highlighting by default
 
-Take a look at example of [os setup script](https://fmnx.su/dancheg97/os). This script will install go, gRPC toolchain, flutter, qemu, vmware and other development tooling.
+Also take a look at [os setup script](https://fmnx.su/dancheg97/os). It will install go, gRPC toolchain, flutter, qemu, vmware and other development tools.
