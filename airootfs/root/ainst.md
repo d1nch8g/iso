@@ -11,8 +11,6 @@ Most operating systems do not provide people with the [digital freedoms](https:/
 
 Other operating systems lead to elitism - unlimited power over software users. Modern society should avoid proprietary programs, as they have a harmful effect on people's attitude on programs and development process.
 
----
-
 ## Increase complexity
 
 Similarly, as [nuxt](https://nuxtjs.org/) is built on top of [vue](https://vuejs.org/), providing better development experience for complex projects, this system goal is to precisely choose the correct level of abstraction to build new projects on top of existing software. We use this approach, with intention to build software not replacing existing components, but complementing user workflow with new features.
@@ -20,8 +18,6 @@ Similarly, as [nuxt](https://nuxtjs.org/) is built on top of [vue](https://vuejs
 Package manager [pack](https://fmnx.su/core/pack) is built on top of pacman, providing additional functionality for software delivery and repository management. System installation tool [ainst](https://fmnx.su/core/ainst) is built on top of [archinstall](https://wiki.archlinux.org/title/archinstall), to provide flexible, customizable and beautiful system installation experience. You can provide access to your packages from [gitea](https://gitea.io/en-us/) under your own domain, and deliver them to [gitea](https://gitea.io/en-us/) using [pack](https://fmnx.su/core/pack) package manager.
 
 Instead of rebuilding software from scratch, we focus on ability to reuse and accumulate existing experience and knowledge. By picking the modular architecture and correct abstraction complexity level for our projects, we concentrate on providing additional functionality and improving overall system experience.
-
----
 
 ## Distro features
 
@@ -38,3 +34,9 @@ Instead of rebuilding software from scratch, we focus on ability to reuse and ac
 - Nano editor has syntax highlighting by default
 
 Also take a look at [os setup script](https://fmnx.su/dancheg97/os). It will install go, gRPC toolchain, flutter, qemu, vmware and other development tools.
+
+## Decentralized in mind
+
+Distro is not using any components/web services, that are forcing users to use centralized system. Distributions public [gitea](https://fmnx.su/) instance serves as development environment and storage for packages. Also any other public gitea instance ([codeberg](https://codeberg.org/), [vern](https://git.vern.cc/), [gitea](https://gitea.com/explore/repos), or you can set up your own) can be used as package storage. You can test it with [pack](https://fmnx.su/core/pack), which provides full integration via giteas arch package API.
+
+This package manager can be used on any arch based distro, depends only on pacman.
