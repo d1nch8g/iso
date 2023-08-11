@@ -1,8 +1,15 @@
-## About fmnx distro...
+## GNU/Linux Egalitarism
 
-Since [GNU](https://www.gnu.org/)/[Linux](https://github.com/torvalds/linux) is the only system, that equally belongs to every person in the world without any exceptions, we try to make it better place for every user.
+Egalitarianism (from French égal 'equal') is a school of thought within political philosophy that builds on the concept of social equality, prioritizing it for all people. Egalitarian doctrines are generally characterized by the idea that all humans are equal in fundamental worth or moral status. As such, all citizens of a state should be accorded equal rights and treatment under the law.
 
-This [arch](https://archlinux.org/) based distribution provides world's most advanced free/open-source tooling, working properly without any adjustments out of the box. The more people we involve in linux development, the better system it will become.
+Most operating systems do not provide people with the [digital freedoms](https://www.gnu.org/philosophy/free-sw.en.html) that are key to egalitarian society:
+
+- The freedom to run the program as you wish, for any purpose (freedom 0).
+- The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+- The freedom to redistribute copies so you can help others (freedom 2).
+- The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+Other operating systems lead to elitism - unlimited power over software users. Modern society should avoid proprietary programs, as they have a harmful effect on people's attitude on programs and development process.
 
 ---
 
@@ -16,31 +23,16 @@ Instead of rebuilding software from scratch, we focus on ability to reuse and ac
 
 ---
 
-## GNU/Linux Egalitarism
+## Distro features
 
-Egalitarianism (from French égal 'equal') is a school of thought within political philosophy that builds on the concept of social equality, prioritizing it for all people. Egalitarian doctrines are generally characterized by the idea that all humans are equal in fundamental worth or moral status. As such, all citizens of a state should be accorded equal rights and treatment under the law.
-
-Most operating systems do not provide people with the [digital freedoms](https://www.gnu.org/philosophy/free-sw.en.html) that are key to egalitarian society:
-
-- The freedom to run the program as you wish, for any purpose (freedom 0).
-- The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
-- The freedom to redistribute copies so you can help others (freedom 2).
-- The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
-
-Other operating systems lead to elitism - unlimited power over software users. Modern society should avoid proprietary programs, as they have a harmfull effect on people's attitudes on programs and development process.
-
----
-
-## Software & Features
-
-List of installed software:
-
-- `gnome` - originally an acronym for GNU Network Object Model Environment, is a free and open-source desktop environment for Linux and other Unix-like operating systems.
-- `vscodium` - free/libre open source software binaries of VS Code. VSCodium is shipped with configurations to better fit in gnome and faster get started with [git](https://git-scm.com/) and [docker](https://www.docker.com/).
-- `git` - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Name and email configured automatically after installation, credential helper is enabled by default.
-- `terminal` - [zsh](https://wikipedia.org/wiki/Zsh) comes as default shell. Autocompletion, syntax highlighting, suggestions and p10k theming already configured.
-- `gpg` - installer will automatically generate [gpg](https://gnupg.org/) keys, you can start creating and shipping arch packages instantly after installation.
-- `docker` - [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/) will be installed and enabled. You can start using them right after installation.
-- `pack` - decentralized package manager based on pacman. Pack works as a wrapper over pacman providing additional functionality for package delivery and database management.
+- Arch based distribution, default mirrors, rolling release model
+- Very simple installer - [ainst](https://fmnx.su/core/ainst), which can use any bash scripts under the hood
+- Decentralized package manager - [pack](https://fmnx.su/core/pack), built on top of pacman, with additional functionality for software delivery
+- [gpg](https://gnupg.org/), [git](https://git-scm.com/) and [docker](https://www.docker.com/) are set up by default during installation
+- [Ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) is default browser, [duckduckgo](https://duckduckgo.com/) - default search engine
+- [VSCodium](https://vscodium.com/) is preinstalled, some default settings have been changed to better fit into distribution
+- Terminal with completions, syntax highlighting, suggestions, powerlevel10k styling, nano editor with highlighting
+- Password you pick is shared for sudo, root, gpg and disk encryption (you can change it later)
+- Gnome desktop environment with minimal set of utilities, applications
 
 Take a look at example of [os setup script](https://fmnx.su/dancheg97/os). This script will install go, gRPC toolchain, flutter, qemu, vmware and other development tooling.
