@@ -130,6 +130,7 @@ gnome-shell-extensions
 gnome-tweaks
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-compact-top-bar
+gnome-shell-extension-space-bar-git
 dconf-editor
 simple-scan
 nautilus
