@@ -1,0 +1,96 @@
+{
+  "custom_links": {
+    "initialized": true,
+    "list": [
+      {
+        "isMostVisited": false,
+        "title": "gnu",
+        "url": "https://gnu.org/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "codeberg",
+        "url": "https://codeberg.org/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "fmnx",
+        "url": "https://fmnx.su/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "stovflow",
+        "url": "https://stackoverflow.com/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "flaticon",
+        "url": "https://flaticon.com/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "github",
+        "url": "https://github.com/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "gopkg",
+        "url": "https://pkg.go.dev/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "pubdev",
+        "url": "https://pub.dev/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "crates",
+        "url": "https://crates.io/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "docker",
+        "url": "https://hub.docker.com/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "vpm",
+        "url": "https://vpm.vlang.io/"
+      },
+      {
+        "isMostVisited": false,
+        "title": "youtube",
+        "url": "https://youtube.com/"
+      }
+    ]
+  },
+  "ntp": {
+    "num_personal_suggestions": 12,
+    "use_most_visited_tiles": false
+  },
+  "brave": {
+    "new_tab_page": {
+      "background": {
+        "random": false,
+        "selected_value": "background.jpg",
+        "type": "custom_image"
+      },
+      "custom_background_image_list": ["background.jpg"],
+      "hide_all_widgets": false,
+      "show_rewards": false,
+      "show_together": false,
+      "show_brave_news": false
+    },
+    "rewards": {
+      "notifications": "{\"displayed\":[],\"notifications\":[]}",
+      "scheduled_captcha": {
+        "failed_attempts": 0,
+        "id": "",
+        "paused": false,
+        "payment_id": "",
+        "snooze_count": 0
+      }
+    },
+    "always_show_bookmark_bar_on_ntp": false
+  }
+}
