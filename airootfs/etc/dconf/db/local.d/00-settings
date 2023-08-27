@@ -1,5 +1,5 @@
 [org/gnome/shell]
-enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-compact-top-bar@metehan-arslan.github.io']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com', 'gnome-compact-top-bar@metehan-arslan.github.io', 'space-bar@luchrioh']
 favorite-apps=['org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Epiphany.desktop', 'brave-browser.desktop', 'vscodium.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Terminal.desktop']
 
 [org/gnome/desktop/peripherals/mouse]
@@ -45,3 +45,20 @@ categories=['X-GNOME-Utilities']
 excluded-apps=['org.gnome.Characters.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Logs.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
+
+[org/gnome/shell/extensions/space-bar/appearance]
+active-workspace-border-radius=7
+active-workspace-padding-h=8
+active-workspace-padding-v=3
+empty-workspace-border-radius=7
+empty-workspace-padding-h=8
+empty-workspace-padding-v=3
+inactive-workspace-border-radius=7
+inactive-workspace-padding-h=8
+inactive-workspace-padding-v=3
+workspace-margin=1
+workspaces-bar-padding=1
+
+[org/gnome/shell/extensions/space-bar/behavior]
+show-empty-workspaces=true
+toggle-overview=true
