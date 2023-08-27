@@ -14,17 +14,13 @@ show-trash=false
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
 
-# [org/gnome/mutter]
-# experimental-features=['scale-monitor-framebuffer']
-
 [org/gnome/desktop/interface]
 color-scheme='prefer-dark'
 font-antialiasing='grayscale'
 font-hinting='slight'
 gtk-theme='Adw-dark'
 icon-theme='Papirus-Dark'
-# scaling-factor=2
-# text-scaling-factor=1.27
+enable-hot-corners=false
 
 [org/gnome/desktop/wm/keybindings]
 switch-applications=['']
