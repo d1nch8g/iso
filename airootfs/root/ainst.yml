@@ -52,7 +52,7 @@ install-scripts:
   - cp -r /usr/local/share/pacman/keyrings /mnt/archinstall/usr/local/share/pacman/keyrings
 
   # Installing additional packages, adding user to docker group.
-  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar gnome-control-center gnome-terminal git bluez-utils dconf-editor brave-bin nautilus xorg-drivers eog geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack xdg-utils nano-syntax-highlighting-git gnome-shell-extension-space-bar-git
+  - arch-chroot /mnt/archinstall pacman -Syu --noconfirm --needed --noprogressbar gnome-disk-utility gnome-keyring gnome-logs gnome-system-monitor gnome-shell-extensions gnome-characters gnome-font-viewer gnome-clocks gnome-shell-extension-dash-to-dock gnome-shell-extension-compact-top-bar gnome-control-center gnome-terminal git bluez-utils dconf-editor brave-bin nautilus xorg-drivers eog geary deja-dup baobab xdg-user-dirs-gtk papirus-icon-theme ttf-droid adw-gtk-theme zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k docker docker-compose vscodium pack xdg-utils nano-syntax-highlighting-git gnome-shell-extension-space-bar-git gnome-browser-connector
   - arch-chroot /mnt/archinstall usermod -aG docker {{USER}}
 
   # Setting up background image and logo.
