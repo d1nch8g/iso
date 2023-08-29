@@ -42,7 +42,7 @@ export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
-export CHROME_EXECUTABLE="/usr/bin/chromium"
+export CHROME_EXECUTABLE="/usr/bin/brave"
 alias code=vscodium
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

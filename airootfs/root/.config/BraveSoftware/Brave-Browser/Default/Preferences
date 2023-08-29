@@ -75,7 +75,10 @@
         "selected_value": "background.jpg",
         "type": "custom_image"
       },
-      "custom_background_image_list": ["background.jpg"],
+      "custom_background_image_list": [
+        "background.jpg"
+      ],
+      "show_branded_background_image": false,
       "hide_all_widgets": false,
       "show_rewards": false,
       "show_together": false,
