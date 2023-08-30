@@ -2,7 +2,7 @@
 <img style="align: center; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;" width="238px" height="238px" src="./logo.png" />
 </p>
 
-<h2 align="center">ISO image for fmnx linux distro</h2>
+<h2 align="center">fmnx distro iso image</h2>
 
 ![](https://img.shields.io/badge/status-alpha-red.svg)
 [![](https://img.shields.io/badge/license-gpl-orange.svg)](https://fmnx.su/core/iso/src/branch/main/LICENSE)
